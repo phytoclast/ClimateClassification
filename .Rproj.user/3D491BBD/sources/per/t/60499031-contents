@@ -4,11 +4,16 @@ author: "Greg J. Schmidt"
 date: "February 12, 2019"
 output: html_document
 ---
-
+<html><head><style>li {list-style-type: none;}</style></head></html>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ##A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distribution
+
+Abstract:
+Climate is an important factor in determining the broad patterns of species distribution and potential vegetation. But when similar or adjacent sites with similar soils are compared, it is not clear what if any difference in climate is responsible for differences in site potential. Ecological site descriptions commonly feature monthly and annual precipitation and temperature in climate descriptions and graphs. However, there is wide overlap among these parameters even where temperature and moisture are the primary drivers for the differences among vegetation types.
+I propose several different parameters which have a better relationship to vegetation differences. Available moisture can only be determined when the timing of the inputs of precipitation and the outputs of potential evapotranspiration (PET) are considered with respect to growing season. Temperature can be understood both terms of optimal physiological activity, and lethal tissue limitations. The proposed parameters retain a connection to real world measurement units and are not obscure unitless indices derived from complex relationships. A Shiny application was developed to illustrate alternative graphs with which to compare different regions of the country. Maps were produced to illustrate the distribution of suggested classification intervals of the parameters.
+
 
 Seven climate indices were calculated to provide a base for an alternative climate classification and be physiologically informative for plant distribution modeling. The indices retain in real world units that can be directly related to climate change. The larger categories of the classification approximate major vegetation formations, but the indices can be subdivided into smaller, regular increments without the presumption that any given threshold implies precision in interpretation.
 
@@ -24,3 +29,41 @@ Moisture index is the P/PET ratio of annual totals (correlating with dominant ve
 Deficit is the sum of each monthly PET exceeding the precipitation. In most vegetation types, 95% of the root mass is located within 150 cm of the surface, to which depth is usually between 100 and 200 mm of available water holding capacity. A deficit of exceeding 150 mm would potentially use up all the available soil water, requiring plants in otherwise humid climates to go dormant.
 Keys to Climate Zones
 **Peak AET** is the maximum monthly AET. Peak AET correlates to the relative advantage in being deciduous in relation to seasonal drought, or the advantage of grasses over scrubs. The coincidence of high temperature with precipitation can also indicate the source of the precipitation being from thunderstorms and therefore a higher frequency of lightning ignitions. Only seasonally moist, seasonally dry, or subhumid climates are classified on the basis of peak AET. Months with mean temperatures exceeding 15°C have PET of at least 75 mm depending on sunlight and relative humidity. Therefore, rainy seasons in tropical climates, which are warm year-round, will usually have peak AET >= 75 mm. Plants in seasonally moist climates with peak AET < 75 mm are either more productive in cooler seasons or are dependent stored soil moisture.
+
+Key to Climate Classification
+
+Macrothermoclimate
+
+* 1a. Tc >= 0°C and Tclx >= -15°C
+
+    * 2a. Tw >= 18°C
+  
+        * 3a. Tc >= 15°C and Tclx >= 0°C  ... Tropical
+    
+        * 3b. Tc < 15°C or Tclx < 0°C ... Subtropical
+  
+    * 2b. Tw < 18°C
+    
+        * 4a. Tw >= 6°C  ...  Oceanic
+    
+        * 4b. Tw < 6°C  ...  Andean
+
+* 1b. Tc >= 0° C or Tclx < -15°C
+
+    * 5a. Tw >= 12°C  ...  Temperate
+
+    * 5b. Tw < 12°C
+
+        * 6a. Tw >= 6°C  ...  Boreal
+
+        * 6b. Tw < 6°C  ...  Arctic
+
+Macrombroclimate
+
+
+* 1a. P/PET ratio >= 1 and total monthly deficit < 150 mm   ...   Isopluvial
+* 1b. P/PET ratio < 1 or total monthly deficit >= 150 mm
+    * 2a. P/PET ratio > 0.5 or total monthly surplus >= 25 mm or peak AET >= 75 mm
+        * 3a. peak AET >= 75 mm (monsoonal with rainfall occurring with warm weather)   ...   Pluviothermic
+        * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   Xerothermic
+    * 2b. P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Isoxeric

@@ -129,12 +129,56 @@ $(document).ready(function () {
 </div>
 
 
+<html>
+<head>
+<style>li {list-style-type: none;}</style>
+</head>
+</html>
 <div id="a-climate-classification-outline-using-biologically-meaningful-indices-for-modeling-plant-distribution" class="section level2">
 <h2>A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distribution</h2>
 <p>Seven climate indices were calculated to provide a base for an alternative climate classification and be physiologically informative for plant distribution modeling. The indices retain in real world units that can be directly related to climate change. The larger categories of the classification approximate major vegetation formations, but the indices can be subdivided into smaller, regular increments without the presumption that any given threshold implies precision in interpretation.</p>
 <p><strong>Growing Season Temperature</strong> is the positive average temperature of the warmest 6 months (any sub freezing months are counted as zeros). Körner (1998) demonstrated that the cold limit of forest growth across a wide range of latitude shared a growing season temperature of 6 to 7°C. It also follows that plant form and function is optimized according to temperatures likely to prevail during the growing season, irrespective of the length of the growing season. Six months is generally sufficient time for to expect developmental maturity to reflect form and function within prevailing temperatures, whereas having a longer or shorter growing season is mostly a function of cumulative growth potential. Other systems use single month temperature thresholds (e.g. the Köppen-Geiger system, Kottek et al, 2006), annual biotemperature (Holdridge, 1947), or growing degree months base 5°C (Prentice et al, 1992) to represent the thermal zonation of vegetation. The 6 degree increments follow Holdridge (1947). Growing season temperature tends to play a dominant role in determining the altitudinal zonation of vegetation in mountains and latitudinal zonation at high latitudes, whereas winter temperatures tend to set the latitudinal zonation of middle and low latitudes.</p>
 <p><strong>Annual Extreme Low/Coldest Mean Monthly Temperature</strong> <strong>Coldest Mean Monthly Temperature</strong> serves to characterize the seasonal variability in temperatures. Its divergence from growing season temperature is in indication of growing season length. For cold tolerant evergreen species, a cold month average above freezing means that photosynthesis can occur year round without damage related to desiccation due to frozen soil. The effects of the minimum monthly average are likely secondary to the importance of extreme minimum temperatures in the northern hemisphere, but are of primary importance in the southern hemisphere where low temperatures are not as extreme. The Köppen-Geiger system defines its latitudinal zones according to the coldest month, whereas the Holdridge system does not address seasonality. <strong>Annual Extreme Low</strong> is coldest daily low temperature in a year corresponding to cold hardiness zones. According to Prentice et al, (1992) and Box (1996) hardiness of boreal species tends to be almost unlimited, whereas most temperate deciduous genera persist only down to -40°C. The diversity of temperate deciduous species drops sharply where annual extreme lows fall below -25°C. Subtropical broadleaf evergreens are frost tolerant to -15°C so long as the monthly averages are above freezing. The diversity of subtropical broadleaf evergreen and hardy palm species drops sharply below -10°C. Some tropical species lack any adaptation to cold and can sustain tissue damage at temperatures as high as 5°C, whereas others can withstand lows of -2°C. In Florida, the 0°C extreme minimum isotherm happens to correspond closely the 18°C minimum monthly average temperature set by the Köppen-Geiger system as the boundary between tropical and subtropical zones. In coastal regions in mid latitudes and at high altitudes at low latitudes, there are essentially frost free zones which support temperate and subtropical genera, mainly because average monthly temperatures do fall below 15°C. Moisture index is the P/PET ratio of annual totals (correlating with dominant vegetation structure, i.e. desert to savanna to forest). This classification follows the break points used in Holdridge (1947) at a log base 2 increments. PET was calculated using a hybrid between the Hamon method (using temperature and daylength) and a term from the Hargreaves-Samoni method (daily temperature range as an indirect indicator of relative humidity and cloud cover) (Lu, McNulty, &amp; Amatya, 2005). The final values were then calibrated to match the average PET calculated for a known mid-latitude humid climatic region (eastern United States) using the Holdridge biotemperature method (Lugo et al, 1999). [Other equations can easily be substituted if they are better supported.]</p>
 <p><strong>Surplus/Deficit</strong> <strong>Surplus</strong> is the sum of each monthly precipitation exceeding the PET. A surplus exceeding 25 mm may be enough to overcome soil re-absorption in the upper 25 cm where half root mass is found and allow for seasonal growth of somewhat mesophytic vegetation in otherwise semiarid climates. In true deserts, this might happen only stochastically in different years, precluding perennial mesophytes. Deficit is the sum of each monthly PET exceeding the precipitation. In most vegetation types, 95% of the root mass is located within 150 cm of the surface, to which depth is usually between 100 and 200 mm of available water holding capacity. A deficit of exceeding 150 mm would potentially use up all the available soil water, requiring plants in otherwise humid climates to go dormant. Keys to Climate Zones <strong>Peak AET</strong> is the maximum monthly AET. Peak AET correlates to the relative advantage in being deciduous in relation to seasonal drought, or the advantage of grasses over scrubs. The coincidence of high temperature with precipitation can also indicate the source of the precipitation being from thunderstorms and therefore a higher frequency of lightning ignitions. Only seasonally moist, seasonally dry, or subhumid climates are classified on the basis of peak AET. Months with mean temperatures exceeding 15°C have PET of at least 75 mm depending on sunlight and relative humidity. Therefore, rainy seasons in tropical climates, which are warm year-round, will usually have peak AET &gt;= 75 mm. Plants in seasonally moist climates with peak AET &lt; 75 mm are either more productive in cooler seasons or are dependent stored soil moisture.</p>
+<p>Key to Climate Classification</p>
+<p>Macrothermoclimate</p>
+<ul>
+<li><p>1a. Tc &gt;= 0°C and Tclx &gt;= -15°C</p>
+<ul>
+<li><p>2a. Tw &gt;= 18°C</p>
+<ul>
+<li><p>3a. Tc &gt;= 15°C and Tclx &gt;= 0°C … Tropical</p></li>
+<li><p>3b. Tc &lt; 15°C or Tclx &lt; 0°C … Subtropical</p></li>
+</ul></li>
+<li><p>2b. Tw &lt; 18°C</p>
+<ul>
+<li><p>4a. Tw &gt;= 6°C … Oceanic</p></li>
+<li><p>4b. Tw &lt; 6°C … Andean</p></li>
+</ul></li>
+</ul></li>
+<li><p>1b. Tc &gt;= 0° C or Tclx &lt; -15°C</p>
+<ul>
+<li><p>5a. Tw &gt;= 12°C … Temperate</p></li>
+<li><p>5b. Tw &lt; 12°C</p>
+<ul>
+<li><p>6a. Tw &gt;= 6°C … Boreal</p></li>
+<li><p>6b. Tw &lt; 6°C … Arctic</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Macrombroclimate</p>
+<ul>
+<li>1a. P/PET ratio &gt;= 1 and total monthly deficit &lt; 150 mm … Isopluvial</li>
+<li>1b. P/PET ratio &lt; 1 or total monthly deficit &gt;= 150 mm
+<ul>
+<li>2a. P/PET ratio &gt; 0.5 or total monthly surplus &gt;= 25 mm or peak AET &gt;= 75 mm
+<ul>
+<li>3a. peak AET &gt;= 75 mm (monsoonal with rainfall occurring with warm weather) … Pluviothermic</li>
+<li>3b. peak AET &lt; 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather) … Xerothermic</li>
+</ul></li>
+<li>2b. P/PET ratio &lt; 0.5 and total monthly surplus &lt; 25 mm and peak AET &lt; 75 mm … Isoxeric</li>
+</ul></li>
+</ul>
 </div>
 
 
