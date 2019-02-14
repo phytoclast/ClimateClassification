@@ -11,7 +11,7 @@
 
 <meta name="author" content="Greg J. Schmidt" />
 
-<meta name="date" content="2019-02-12" />
+<meta name="date" content="2019-02-14" />
 
 <title>Climate Classification</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Climate Classification</h1>
 <h4 class="author"><em>Greg J. Schmidt</em></h4>
-<h4 class="date"><em>February 12, 2019</em></h4>
+<h4 class="date"><em>2019-02-14</em></h4>
 
 </div>
 
@@ -136,49 +136,252 @@ $(document).ready(function () {
 </html>
 <div id="a-climate-classification-outline-using-biologically-meaningful-indices-for-modeling-plant-distribution" class="section level2">
 <h2>A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distribution</h2>
+<p>Abstract:</p>
+<blockquote>
+<p>Climate is an important factor in determining the broad patterns of species distribution and potential vegetation. But when similar or adjacent sites with similar soils are compared, it is not clear what if any difference in climate is responsible for differences in site potential. Ecological site descriptions commonly feature monthly and annual precipitation and temperature in climate descriptions and graphs. However, there is wide overlap among these parameters even where temperature and moisture are the primary drivers for the differences among vegetation types. I propose several different parameters which have a better relationship to vegetation differences. Available moisture can only be determined when the timing of the inputs of precipitation and the outputs of potential evapotranspiration (PET) are considered with respect to growing season. Temperature can be understood both terms of optimal physiological activity, and lethal tissue limitations. The proposed parameters retain a connection to real world measurement units and are not obscure unitless indices derived from complex relationships. A Shiny application was developed to illustrate alternative graphs with which to compare different regions of the country. Maps were produced to illustrate the distribution of suggested classification intervals of the parameters.</p>
+</blockquote>
+<blockquote>
 <p>Seven climate indices were calculated to provide a base for an alternative climate classification and be physiologically informative for plant distribution modeling. The indices retain in real world units that can be directly related to climate change. The larger categories of the classification approximate major vegetation formations, but the indices can be subdivided into smaller, regular increments without the presumption that any given threshold implies precision in interpretation.</p>
+</blockquote>
 <p><strong>Growing Season Temperature</strong> is the positive average temperature of the warmest 6 months (any sub freezing months are counted as zeros). Körner (1998) demonstrated that the cold limit of forest growth across a wide range of latitude shared a growing season temperature of 6 to 7°C. It also follows that plant form and function is optimized according to temperatures likely to prevail during the growing season, irrespective of the length of the growing season. Six months is generally sufficient time for to expect developmental maturity to reflect form and function within prevailing temperatures, whereas having a longer or shorter growing season is mostly a function of cumulative growth potential. Other systems use single month temperature thresholds (e.g. the Köppen-Geiger system, Kottek et al, 2006), annual biotemperature (Holdridge, 1947), or growing degree months base 5°C (Prentice et al, 1992) to represent the thermal zonation of vegetation. The 6 degree increments follow Holdridge (1947). Growing season temperature tends to play a dominant role in determining the altitudinal zonation of vegetation in mountains and latitudinal zonation at high latitudes, whereas winter temperatures tend to set the latitudinal zonation of middle and low latitudes.</p>
 <p><strong>Annual Extreme Low/Coldest Mean Monthly Temperature</strong> <strong>Coldest Mean Monthly Temperature</strong> serves to characterize the seasonal variability in temperatures. Its divergence from growing season temperature is in indication of growing season length. For cold tolerant evergreen species, a cold month average above freezing means that photosynthesis can occur year round without damage related to desiccation due to frozen soil. The effects of the minimum monthly average are likely secondary to the importance of extreme minimum temperatures in the northern hemisphere, but are of primary importance in the southern hemisphere where low temperatures are not as extreme. The Köppen-Geiger system defines its latitudinal zones according to the coldest month, whereas the Holdridge system does not address seasonality. <strong>Annual Extreme Low</strong> is coldest daily low temperature in a year corresponding to cold hardiness zones. According to Prentice et al, (1992) and Box (1996) hardiness of boreal species tends to be almost unlimited, whereas most temperate deciduous genera persist only down to -40°C. The diversity of temperate deciduous species drops sharply where annual extreme lows fall below -25°C. Subtropical broadleaf evergreens are frost tolerant to -15°C so long as the monthly averages are above freezing. The diversity of subtropical broadleaf evergreen and hardy palm species drops sharply below -10°C. Some tropical species lack any adaptation to cold and can sustain tissue damage at temperatures as high as 5°C, whereas others can withstand lows of -2°C. In Florida, the 0°C extreme minimum isotherm happens to correspond closely the 18°C minimum monthly average temperature set by the Köppen-Geiger system as the boundary between tropical and subtropical zones. In coastal regions in mid latitudes and at high altitudes at low latitudes, there are essentially frost free zones which support temperate and subtropical genera, mainly because average monthly temperatures do fall below 15°C. Moisture index is the P/PET ratio of annual totals (correlating with dominant vegetation structure, i.e. desert to savanna to forest). This classification follows the break points used in Holdridge (1947) at a log base 2 increments. PET was calculated using a hybrid between the Hamon method (using temperature and daylength) and a term from the Hargreaves-Samoni method (daily temperature range as an indirect indicator of relative humidity and cloud cover) (Lu, McNulty, &amp; Amatya, 2005). The final values were then calibrated to match the average PET calculated for a known mid-latitude humid climatic region (eastern United States) using the Holdridge biotemperature method (Lugo et al, 1999). [Other equations can easily be substituted if they are better supported.]</p>
-<p><strong>Surplus/Deficit</strong> <strong>Surplus</strong> is the sum of each monthly precipitation exceeding the PET. A surplus exceeding 25 mm may be enough to overcome soil re-absorption in the upper 25 cm where half root mass is found and allow for seasonal growth of somewhat mesophytic vegetation in otherwise semiarid climates. In true deserts, this might happen only stochastically in different years, precluding perennial mesophytes. Deficit is the sum of each monthly PET exceeding the precipitation. In most vegetation types, 95% of the root mass is located within 150 cm of the surface, to which depth is usually between 100 and 200 mm of available water holding capacity. A deficit of exceeding 150 mm would potentially use up all the available soil water, requiring plants in otherwise humid climates to go dormant. Keys to Climate Zones <strong>Peak AET</strong> is the maximum monthly AET. Peak AET correlates to the relative advantage in being deciduous in relation to seasonal drought, or the advantage of grasses over scrubs. The coincidence of high temperature with precipitation can also indicate the source of the precipitation being from thunderstorms and therefore a higher frequency of lightning ignitions. Only seasonally moist, seasonally dry, or subhumid climates are classified on the basis of peak AET. Months with mean temperatures exceeding 15°C have PET of at least 75 mm depending on sunlight and relative humidity. Therefore, rainy seasons in tropical climates, which are warm year-round, will usually have peak AET &gt;= 75 mm. Plants in seasonally moist climates with peak AET &lt; 75 mm are either more productive in cooler seasons or are dependent stored soil moisture.</p>
-<p>Key to Climate Classification</p>
-<p>Macrothermoclimate</p>
+<p><strong>Surplus/Deficit</strong> <strong>Surplus</strong> is the sum of each monthly precipitation exceeding the PET. A surplus exceeding 25 mm may be enough to overcome soil re-absorption in the upper 25 cm where half root mass is found and allow for seasonal growth of somewhat mesophytic vegetation in otherwise semiarid climates. In true deserts, this might happen only stochastically in different years, precluding perennial mesophytes. Deficit is the sum of each monthly PET exceeding the precipitation. In most vegetation types, 95% of the root mass is located within 150 cm of the surface, to which depth is usually between 100 and 200 mm of available water holding capacity. A deficit of exceeding 150 mm would potentially use up all the available soil water, requiring plants in otherwise humid climates to go dormant. Keys to Climate Zones <strong>Peak AET</strong> is the maximum monthly AET. Peak AET correlates to the relative advantage in being deciduous in relation to seasonal drought, or the advantage of grasses over scrubs. The coincidence of high temperature with precipitation can also indicate the source of the precipitation being from thunderstorms and therefore a higher frequency of lightning ignitions. Only seasonally moist, seasonally dry, or subhumid climates are classified on the basis of peak AET. Months with mean temperatures exceeding 15°C have PET of at least 75 mm depending on sunlight and relative humidity. Therefore, rainy seasons in tropical climates, which are warm year-round, will usually have peak AET ≥ 75 mm. Plants in seasonally moist climates with peak AET &lt; 75 mm are either more productive in cooler seasons or are dependent stored soil moisture.</p>
+</div>
+<div id="keys-to-climate-classification" class="section level2">
+<h2>Keys to Climate Classification</h2>
+<div id="macrothermoclimate" class="section level3">
+<h3>Macrothermoclimate</h3>
 <ul>
-<li><p>1a. Tc &gt;= 0°C and Tclx &gt;= -15°C</p>
+<li>1a. Tc ≥ 0°C and Tclx ≥ -15°C
 <ul>
-<li><p>2a. Tw &gt;= 18°C</p>
+<li>2a. Tw ≥ 18°C
 <ul>
-<li><p>3a. Tc &gt;= 15°C and Tclx &gt;= 0°C … Tropical</p></li>
-<li><p>3b. Tc &lt; 15°C or Tclx &lt; 0°C … Subtropical</p></li>
+<li>3a. Tc ≥ 15°C and Tclx ≥ 0°C … Tropical</li>
+<li>3b. Tc &lt; 15°C or Tclx &lt; 0°C … Subtropical</li>
 </ul></li>
-<li><p>2b. Tw &lt; 18°C</p>
+<li>2b. Tw &lt; 18°C
 <ul>
-<li><p>4a. Tw &gt;= 6°C … Oceanic</p></li>
-<li><p>4b. Tw &lt; 6°C … Andean</p></li>
+<li>4a. Tw ≥ 6°C … Oceanic</li>
+<li>4b. Tw &lt; 6°C … Andean</li>
 </ul></li>
 </ul></li>
-<li><p>1b. Tc &gt;= 0° C or Tclx &lt; -15°C</p>
+<li>1b. Tc ≥ 0° C or Tclx &lt; -15°C
 <ul>
-<li><p>5a. Tw &gt;= 12°C … Temperate</p></li>
-<li><p>5b. Tw &lt; 12°C</p>
+<li>5a. Tw ≥ 12°C … Temperate</li>
+<li>5b. Tw &lt; 12°C
 <ul>
-<li><p>6a. Tw &gt;= 6°C … Boreal</p></li>
-<li><p>6b. Tw &lt; 6°C … Arctic</p></li>
+<li>6a. Tw ≥ 6°C … Boreal</li>
+<li>6b. Tw &lt; 6°C … Arctic</li>
 </ul></li>
 </ul></li>
 </ul>
-<p>Macrombroclimate</p>
+</div>
+<div id="macrombroclimate" class="section level3">
+<h3>Macrombroclimate</h3>
 <ul>
-<li>1a. P/PET ratio &gt;= 1 and total monthly deficit &lt; 150 mm … Isopluvial</li>
-<li>1b. P/PET ratio &lt; 1 or total monthly deficit &gt;= 150 mm
+<li>1a. P/PET ratio ≥ 1 and total monthly deficit &lt; 150 mm … Isopluvial</li>
+<li>1b. P/PET ratio &lt; 1 or total monthly deficit ≥ 150 mm
 <ul>
-<li>2a. P/PET ratio &gt; 0.5 or total monthly surplus &gt;= 25 mm or peak AET &gt;= 75 mm
+<li>2a. P/PET ratio &gt; 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
 <ul>
-<li>3a. peak AET &gt;= 75 mm (monsoonal with rainfall occurring with warm weather) … Pluviothermic</li>
+<li>3a. peak AET ≥ 75 mm (monsoonal with rainfall occurring with warm weather) … Pluviothermic</li>
 <li>3b. peak AET &lt; 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather) … Xerothermic</li>
 </ul></li>
 <li>2b. P/PET ratio &lt; 0.5 and total monthly surplus &lt; 25 mm and peak AET &lt; 75 mm … Isoxeric</li>
 </ul></li>
 </ul>
+</div>
+<div id="temperature-regime" class="section level3">
+<h3>Temperature Regime</h3>
+<ul>
+<li>1a. Tc ≥ 0°C and Tclx ≥ -15°C
+<ul>
+<li>2a. Tw ≥ 18°C
+<ul>
+<li>3a. Tc ≥ 15°C and Tclx ≥ 0°C … Tropical
+<ul>
+<li>Tw ≥ 24°C
+<ul>
+<li>Tc ≥ 20°C and Tclx ≥ 5°C … Hot Mesotropical</li>
+<li>Tc &lt; 20°C or Tclx &lt; 5°C … Hot Cryotropical</li>
+</ul></li>
+<li>Tw &lt; 24°C … Premontane Tropical</li>
+</ul></li>
+<li>3b. Tc &lt; 15°C or Tclx &lt; 0°C … Subtropical
+<ul>
+<li>Tc ≥ 10°C and Tclx ≥ -5°C
+<ul>
+<li>Tw ≥ 24°C … Hot Thermosubtropical</li>
+<li>Tw &lt; 24°C … Warm Thermosubtropical</li>
+</ul></li>
+<li>Tc &lt; 10°C or Tclx &lt; -10°C
+<ul>
+<li>Tc ≥ 5°C and Tclx ≥ -10°C
+<ul>
+<li>Tw ≥ 24°C … Hot Mesosubtropical</li>
+<li>Tw &lt; 24°C … Warm Mesosubtropical</li>
+</ul></li>
+<li>Tc &lt; 5°C or Tclx &lt; -10°C
+<ul>
+<li>Tw ≥ 24°C … Hot Cryosubtropical</li>
+<li>Tw &lt; 24°C … Warm Cryosubtropical</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>2b. Tw &lt; 18°C
+<ul>
+<li>4a. Tw ≥ 6°C … Oceanic
+<ul>
+<li>Tw ≥ 12°C
+<ul>
+<li>Tc ≥ 5°C and Tclx ≥ -10°C … Montane Subtropical</li>
+<li>Tc &lt; 5°C or Tclx &lt; -10°C … Mild Oceanic</li>
+</ul></li>
+<li>Tw &lt; 12°C
+<ul>
+<li>Tc ≥ 5°C and Tclx ≥ -5°C … Subandean</li>
+<li>Tc &lt; 5°C or Tclx &lt; -10°C … Cool Oceanic</li>
+</ul></li>
+</ul></li>
+<li>4b. Tw &lt; 6°C … Andean</li>
+</ul></li>
+</ul></li>
+<li>1b. Tc ≥ 0° C or Tclx &lt; -15°C
+<ul>
+<li>5a. Tw ≥ 12°C …… Temperate
+<ul>
+<li>Tc ≥ -10°C or Tclx ≥ -25°C
+<ul>
+<li>Tw ≥ 18°C
+<ul>
+<li>Tc ≥ -5°C or Tclx ≥ -20°C … Warm Thermotemperate</li>
+<li>Tc &lt; -5°C or Tclx &lt; -20°C … Warm Mesotemperate</li>
+</ul></li>
+<li>Tw &lt; 18°C
+<ul>
+<li>Tw ≥ 15°C … Mild Temperate</li>
+<li>Tw &lt; 15°C … Presubalpine</li>
+</ul></li>
+</ul></li>
+<li>Tc &lt; -10°C or Tclx &lt; -25°C
+<ul>
+<li>Tc ≥ -25°C or Tclx ≥ -40°C
+<ul>
+<li>Tw ≥ 15°C
+<ul>
+<li>Tw ≥ 18°C … Warm Cryotemperate</li>
+<li>Tw &lt; 18°C … Mild Cryotemperate</li>
+</ul></li>
+<li>Tw &lt; 15°C … Hemiboreal</li>
+</ul></li>
+<li>Tc &lt; -10°C or Tclx &lt; -25°C … Warm Boreal</li>
+</ul></li>
+</ul></li>
+<li>5b. Tw &lt; 12°C
+<ul>
+<li>6a. Tw ≥ 6°C … Boreal
+<ul>
+<li>Tc ≥ -10°C and Tclx ≥ -25°C … Subalpine</li>
+<li>Tc &lt; -10°C or Tclx &lt; -25°C … Cool Boreal</li>
+</ul></li>
+<li>6b. Tw &lt; 6°C … Arctic
+<ul>
+<li>Tc ≥ -10°C and Tclx ≥ -25°C … Alpine</li>
+<li>Tc &lt; -10°C or Tclx &lt; -25°C … Arctic</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="moisture-zones" class="section level3">
+<h3>Moisture Zones</h3>
+<ul>
+<li>1a. P/PET ratio ≥ 2 … Perhumid</li>
+<li>1b. P/PET ratio &lt; 2
+<ul>
+<li>2a. P/PET ratio ≥ 1.414 … Moist Humid</li>
+<li>2b. P/PET ratio &lt; 1.414
+<ul>
+<li>3a. P/PET ratio ≥ 1 … Dry Humid</li>
+<li>3b. P/PET ratio &lt; 1
+<ul>
+<li>4a. P/PET ratio ≥ 0.707 … Moist Subhumid</li>
+<li>4b. P/PET ratio &lt; 0.707
+<ul>
+<li>5a. P/PET ratio ≥ 0.5 … Dry Subhumid</li>
+<li>5b. P/PET ratio &lt; 0.5
+<ul>
+<li>6a. P/PET ratio ≥ 0.25 … Semiarid</li>
+<li>6b. P/PET ratio &lt; 0.25
+<ul>
+<li>7a. P/PET ratio ≥ 0.125 … Arid</li>
+<li>7b. P/PET ratio &lt; 0.125 … Perarid</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="formulae" class="section level3">
+<h3>Formulae</h3>
+<p>Monthly potential evapotranspiration: <span class="math display">\[PET = 0.008404 * 216.7*\frac{exp(17.26939*\frac{T}{T+237.3})}{T+273.3}*Ra*dM*(Tmax-Tmin)^{0.5}\]</span></p>
+<p>where</p>
+<p>Declination: <span class="math inline">\(dec = 0.409*sin(2*\pi*Md/365 – 1.39)\)</span></p>
+<p>Sunset Angle: <span class="math inline">\(hs = acos(-tan(Latitude/360*2*\pi) * tan(declination)) [-1\to 1]\)</span></p>
+<p>Potential Solar Radiation: <span class="math inline">\(Ra = 117.5 * (hs*sin(Latitude/360*2*\pi)*sin(dec) + cos(Latitude/360*2*\pi)*cos(dec)*sin(hs)) /\pi\)</span></p>
+<p>T = mean monthly temperature</p>
+<p>Tmax = mean monthly daily high temperature</p>
+<p>Tmin = mean monthly daily low temperature</p>
+<p>Md = mid-month day of year</p>
+<p>dM = total days in month</p>
+<p>Simple approximation of monthly PET: <span class="math display">\[PET = 5 * BT\]</span></p>
+<p>where</p>
+<p>BT = positive mean monthly temperature <span class="math inline">\([0\to\infty]\)</span> (values below zero set to zero) or “biotemperature”.</p>
+<p>Mean annual extreme low temperature (approximated): <span class="math inline">\(Tclx = -9.921 + 1.248*Tcl + -0.03829*L + 0.000904*A + -0.0000219 * L*A\)</span></p>
+<p>where</p>
+<p>Tcl = low temperature of coldest month</p>
+<p>L = latitude</p>
+<p>A = altitude above sealevel Other variables</p>
+<p>Tc = mean temperature of the coldest month</p>
+<p>Tw = mean positive (subzero temperatures counted as zero) temperature of the warmest 6 months</p>
+<p>P = precipitation</p>
+<p>AET = lesser value among monthly P and PET, approximating “actual evapotranspiration” without considering affects of soil moisture storage or runoff.</p>
+<p>Deficit = .total monthly deficit is calculated by summing for the entire year each monthly amount of PET in excess of P (subtract P from PET if P is less than PET; zero if P ≥ PET).</p>
+<p>Surplus = total monthly surplus is calculated by summing for the entire year each monthly amount of P in excess of PET (subtract PET from P if PET is less than P; zero if P &lt;= PET).</p>
+</div>
+<div id="references" class="section level3">
+<h3>References</h3>
+<div id="hardiness-zone-map-of-the-world-recreated-from-these-sources" class="section level4">
+<h4>Hardiness Zone Map of the World recreated from these sources:</h4>
+<p>Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K., Taylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive mapping of temperature and precipitation across the conterminous United States. International Journal of Climatology, 28: 2031-2064. (<a href="http://prism.oregonstate.edu/normals/" class="uri">http://prism.oregonstate.edu/normals/</a>)</p>
+<p>Daly, C., Widrlechner, M.P., Halbleib, M.D., Smith, J.I. and Gibson, W.P., 2012. Development of a new USDA plant hardiness zone map for the United States. Journal of Applied Meteorology and Climatology, 51(2), pp.242-264.</p>
+<p>Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978. (<a href="http://www.worldclim.org/version1" class="uri">http://www.worldclim.org/version1</a>)</p>
+<p>Magarey, R.D., Borchert, D.M. and Schlegel, J.W., 2008. Global plant hardiness zones for phytosanitary risk analysis. Scientia Agricola, 65(SPE), pp.54-59.</p>
+</div>
+<div id="alternative-climate-classifications" class="section level4">
+<h4>Alternative Climate Classifications:</h4>
+<p>Holdridge, L.R., 1947. Determination of world plant formations from simple climatic data. Science, 105(2727), pp.367-368.</p>
+<p>Lugo, A.E., Brown, S.L., Dodson, R., Smith, T.S. and Shugart, H.H., 1999. The Holdridge life zones of the conterminous United States in relation to ecosystem mapping. Journal of biogeography, 26(5), pp.1025-1038.</p>
+<p>Kottek, M., Grieser, J., Beck, C., Rudolf, B. and Rubel, F., 2006. World map of the Köppen-Geiger climate classification updated. Meteorologische Zeitschrift, 15(3), pp.259-263.</p>
+<p>Rivas-Martínez, S., 2004. Global bioclimatics. Classificación Bioclimática de la Tierra. <a href="http://www.globalbioclimatics.org/form/maps.htm" class="uri">http://www.globalbioclimatics.org/form/maps.htm</a></p>
+<p>Thornthwaite, C.W., 1948. An approach toward a rational classification of climate. Geographical review, 38(1), pp.55-94.</p>
+<p>Alternative PET calculations:</p>
+<p>Lu, J., Sun, G., McNulty, S.G. and Amatya, D.M., 2005. A comparison of six potential evapotranspiration methods for regional use in the southeastern United States 1. JAWRA Journal of the American Water Resources Association, 41(3), pp.621-633.</p>
+</div>
+<div id="other-publications-relating-climate-to-vegetation" class="section level4">
+<h4>Other publications relating climate to vegetation:</h4>
+<p>Faber-Langendoen, D., Keeler-Wolf, T., Meidinger, D., Josse, C., Weakley, A., Tart, D., Navarro, G., Hoagland, B., Ponomarenko, S., Saucier, J.P. and Fults, G., 2012. Classification and description of world formation types. Part II (Description of formation types). Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA.</p>
+<p>Box, E.O., 1996. Plant functional types and climate at the global scale. Journal of Vegetation Science, 7(3), pp.309-320.</p>
+<p>Körner, C., 1998. A re-assessment of high elevation treeline positions and their explanation. Oecologia, 115(4), pp.445-459.</p>
+<p>Prentice, I.C., Cramer, W., Harrison, S.P., Leemans, R., Monserud, R.A. and Solomon, A.M., 1992. Special paper: a global biome model based on plant physiology and dominance, soil properties and climate. Journal of biogeography, pp.117-134.</p>
+<p>Sakai, A., 1981. Freezing resistance of broad-leaved evergreen trees in the warm-temperate zone. Low temperature Science. Ser. B, Biological sciences, 38, pp.1-14.</p>
+<p>Schenk, H.J. and Jackson, R.B., 2002. The global biogeography of roots. Ecological monographs, 72(3), pp.311-328.</p>
+<p>Wright, I.J., Dong, N., Maire, V., Prentice, I.C., Westoby, M., Díaz, S., Gallagher, R.V., Jacobs, B.F., Kooyman, R., Law, E.A. and Leishman, M.R., 2017. Global climatic drivers of leaf size. Science, 357(6354), pp.917-921.</p>
+</div>
+</div>
 </div>
 
 
