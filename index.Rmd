@@ -24,29 +24,38 @@ Previous attempts at pinning temperatures of the timberline to the highest month
 
 Vegetation zonation at warmer temperatures should also be expected to follow a growing season optimum according to each species, except where critical thresholds of cold or drought tolerances are exceeded. Examples can be seen where crops and tree genera associated with the temperate zone are found in the premontane and montane zones of tropical mountains where warm seasons are comparable, but winters are very different. The limits to most crops and the boundary between the temperate deciduous and boreal forest zones corresponds roughy to a growing season temperature of 12°C.
 
+![Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
 
 **Annual Extreme Low/Coldest Mean Monthly Temperature**
 
 Winter for a plant is when temperatures are less than optimal for continued activity or exceeds the limits of cold tolerance for exposed tissues. Coldest mean monthly and annual extreme low temperatures are correlated winter season parameters with contrasting effects on vegetation. Mean temperatures of the coldest month determines the potential for photosynthesis versus the need for dormancy. It can also indicate other effects such as whether soil is likely to be frozen, leaving an evergreen more vulnerable to desiccation. Extreme low temperature is more direct, causing mortality to tissues that are not adapted. Plants in the northern hemisphere are more likely to be limited by extreme temperatures even while mean monthly temperatures might still be suitable for photosynthesis. In setting up a winter hardiness zones, most emphasis is placed on the extremes. But some consideration is needed to put limits on mean monthly temperatures where extreme temperatures do not correspond.
 The synthesis of extreme cold and average cold into a single index was made to accommodate the concept of subtropical as a climate warm enough to maintain year-round photosynthesis, but subject to frost. The modal vegetation difference between temperate (continental) and subtropical and tropical vegetation is the presence of broadleaf evergreen species and palms. According to Prentice et al, (1992) and Box (1996), most frost tolerate broadleaf evergreens are hardy to extreme low temperatures of -15°C. Most tropical species lack any adaptation to cold and can sustain tissue damage at temperatures as high as 5°C, whereas others can withstand lows of -2°C. The Köppen-Geiger system delineates subtropical and oceanic climate zones where mean temperature of the coldest month exceeds 0°C, and a tropical climate zone where temperature exceeds 18°C. The Holdridge system does not address seasonality, but uses annual biotemperature of 18°C and 24°C for subtropical and tropical zones respectively.
 
+
 The cold index used here for a subtropical designation, therefore, pivots around whichever is above the more limiting value relative to 0°C for coldest mean monthly and -15°C annual extreme low temperatures. Tropical climate is defined here to be frost free above the 0°C extreme low temperature threshold and allowing a coldest monthly mean temperature to be as low as 15°C, maintaining the 15-degree differential between the two parameters. The consensus among different systems maintaining subtropical or tropical climates above an 18°C threshold will be expressed by setting it as the lower limit of growing season temperature, below which an oceanic or tropical montane climate will be defined.
 The cold index can be tuned further to subdivide the temperate (continental) climates. While most of the zonation will pivot on limitations to growing season warmth, there are some limits on groups of taxa. The hardiness of boreal species tends to be almost unlimited, whereas most temperate deciduous genera persist only down to -40°C. The diversity of temperate deciduous species drops sharply where annual extreme lows fall below -25°C.
+
+![Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
 
 
 **Surplus/Deficit**
 Mesophytic vegetation requires a constant supply of soil moisture, whereas xerophytic vegetation tolerates periods of drought. Mesophytic forests typically occur where mean annual precipitation exceeds potential evapotranspiration ratio (P/PET ratio), meaning that seasonal dry periods are more than compensated for by seasonal surpluses stored as soil moisture to maintain plant growth. Gradations in moisture regime are usually expressed on a log base 2 scale (e.g. Holdridge), from per-humid and per-arid at its wet and dry extremes respectively.
 
 Even in a humid climate, significant seasonal drought occurs where the cumulative loss of moisture evapotranspiration exceeds that of available soil water holding capacity within the rooting zone. A deficit of 150 mm or more is considered significant for most soils and would require adaptations of thickened leaves or deciduousness to protect a plant from drying out. Desert vegetation may occur where precipitation is less than half required to maintain soil moisture, and that significant seasonal surpluses do not support seasonal growth of mesophytic vegetation. Instead, desert vegetation must avail themselves with episodic rainfall that never wets the whole soil profile.
+![Comparision between a humid isopluvial climate (MLRA 98A) and a perhumid xerothermic climate (MLRA 1), showing that significant moisture stress can be more likely in the wetter climate if soil water holding capacity is less than the total moisture deficit.](figures/MoistureDroughtCompare.png)
 
-**Peak AET** For climates with seasonal variability in moisture, plants must employ a strategy of either tolerance or avoidance to survive the dry season. The timing of the dry season, however is of less importance compared the timing of the wet season. If the wet season coincides with temperatures favoring maximum growth, the strategy is avoidance, allowing annual regrowth of more efficient deciduous organs optimized for higher peak productivity. In contrast, if moisture is only available during periods of lower temperatures, the strategy is tolerance, allowing persistence through long periods of low productivity.
+**Peak AET** For climates with seasonal variability in moisture, plants must employ a strategy of either tolerance or avoidance to survive the dry season. The timing of the dry season, however is of less importance compared the timing of the wet season. If the wet season coincides with temperatures favoring maximum growth, the strategy is avoidance, allowing annual regrowth of more efficient deciduous organs optimized for higher peak productivity. In contrast, if moisture is only available during periods of lower temperatures, the strategy is tolerance, allowing persistence through long periods of low productivity. In addition, when warm temperatures coincides with precipitation, the frequency of lightning is higher and fire return inverval is shorter, further giving advantage to grassland vegetation over shrubland.
 
-Actual monthly evapotranspiration (AET) is an indicator of how much precipitation of the current month is used in that month.  A minimally tropical month at 15°C would generally result in a PET of at least 75 mm. Therefore, a tropical rainy should have a peak AET of greater than or equal to 75 mm. Plants in seasonally moist climates with peak AET less than 75 mm either lack a warm season, or are moist only during the cool season.
+Actual monthly evapotranspiration (AET) is an indicator of how much precipitation of the current month is used in that month.  A minimally tropical month at 15°C would generally result in a PET of at least 75 mm. Therefore, a tropical rainy should have a peak monthly AET of greater than or equal to 75 mm. Plants in seasonally moist climates with peak AET less than 75 mm either lack a warm season, or are moist only during the cool season.
+
+![Comparision between a subtropical prairie climate (MLRA 78A) and a chapparal climate (MLRA 14), showing how peak AET is the key difference.](figures/pAET_Compare.png)
+
+
 
 **A note on estimating annual extreme low temperatures** Most available climatic data sets consist of averaged monthly values and lack sufficient information on temperature extremes. In order to estimate annual extreme low temperature, I consulted a couple of sources (Magarey, Borchert, & Schlegel, 2008; Daly et al., 2012) which generated gridded hardiness zone data. I then sampled points from these grids to associate with mean monthly temperature parameters from another gridded source of the appropriate timeframe 
 (Hijmans et al., 2005; Daly et al., 2008) and developed a linear model. The linear model related annual extreme low temperatures with mean daily low temperatures, latitude, and altitude. I refined the model further by introducing a set of regional correction factors based on distance from specific latitudes and longitudes.
 
-**A note on PET equations** Potential evapotranspiration is a function of temperature, solar radiation, relative humidity, cloud cover, wind speed, and atmospheric pressure. The Holdridge method is the simplelest method, by simply multiplying annual biotemperature by 58.93. The Thornthwaite method was an earlier attempt at estimating PET that used only monthly mean temperature, and used day length as a proxy for solar radiation. Formulas that use daylength for solar radiation that do not account for lower sun angles (e.g. Thornthwaite) may also over estimate PET at high latitudes with 24 hour sunshine. The interpretability monthly values using the Thorntwaite method is also complicated by division by a “heat index” which is based on an annual temperature total, rendering some values in the arctic region to be anomalously high. Priestly-Taylor method is considered among the more accurate, consisting of elements of each of these factors http://www.fao.org/docrep/x0490e/x0490e07.htm#solar%20radiation or http://modeling.bsyse.wsu.edu/CS_Suite/cropsyst/manual/simulation/et/priestly_taylor.htm). Employing all the needed parameters for a global map is impracticable. Hargreaves-Samoni method reduces the number of required parameters by using daily temperature range as a proxy for cloud cover and relative humidity (Lu, McNulty, & Amatya, 2005). I followed a hybrid approach using temperature, daily temperature range, and a formula for calculating shortwave solar radiation. I calibrated the formula against values from the Thornthwaite method in the north temperate zone where it is widely employed. This approach falls short of the Thornthwaite method in cool or humid climates and exceeds it in arid regions with a wide daily temperature ranges.
+**A note on PET equations** Potential evapotranspiration is a function of temperature, solar radiation, relative humidity, cloud cover, wind speed, and atmospheric pressure (Lu, McNulty, & Amatya, 2005). The Holdridge method is the simplest method, by simply multiplying annual biotemperature by 58.93, but is never used for serious applications beyond climate classification. The Thornthwaite method was an earlier attempt at estimating PET that used only monthly mean temperature, and used day length as a proxy for solar radiation. Formulas that use daylength for solar radiation that do not account for lower sun angles (e.g. Thornthwaite) may also over estimate PET at high latitudes with 24 hour sunshine. The interpretability monthly values using the Thorntwaite method is also complicated by division by a “heat index” which is based on an annual temperature total, rendering some values in the arctic region to be anomalously high. Priestly-Taylor method is considered among the more accurate (Lu, McNulty, & Amatya, 2005), consisting of elements of each of these factors (Details can be found here: http://www.fao.org/docrep/x0490e/x0490e07.htm#solar%20radiation or http://modeling.bsyse.wsu.edu/CS_Suite/cropsyst/manual/simulation/et/priestly_taylor.htm). Employing all the needed parameters for a global map is impracticable. Hargreaves-Samoni method reduces the number of required parameters by using daily temperature range as a proxy for cloud cover and relative humidity. I followed a hybrid approach using temperature, daily temperature range, and a formula for calculating shortwave solar radiation. I calibrated the formula against values from the Thornthwaite method in the north temperate zone where it is widely employed. This approach falls short of the Thornthwaite method in cool or humid climates and exceeds it in arid regions with a wide daily temperature ranges.
 
 
 
@@ -55,165 +64,172 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
 ###Macrothermoclimate
 
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
-    * 2a. Tw ≥ 18°C
-        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... Tropical
-        * 3b. Tc < 15°C or Tclx < 0°C ... Subtropical
-    * 2b. Tw < 18°C
-        * 4a. Tw ≥ 6°C  ...  Oceanic
-        * 4b. Tw < 6°C  ...  Andean
+    * 2a. Tg ≥ 18°C
+        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... **Tropical**
+        * 3b. Tc < 15°C or Tclx < 0°C ... **Subtropical**
+    * 2b. Tg < 18°C
+        * 4a. Tg ≥ 6°C  ...  **Oceanic**
+        * 4b. Tg < 6°C  ...  **Andean**
 * 1b. Tc ≥ 0° C or Tclx < -15°C
-    * 5a. Tw ≥ 12°C  ...  Temperate
-    * 5b. Tw < 12°C
-        * 6a. Tw ≥ 6°C  ...  Boreal
-        * 6b. Tw < 6°C  ...  Arctic
+    * 5a. Tg ≥ 12°C  ...  **Temperate**
+    * 5b. Tg < 12°C
+        * 6a. Tg ≥ 6°C  ...  **Boreal**
+        * 6b. Tg < 6°C  ...  **Arctic**
 
 ###Macrombroclimate
 
 
-* 1a. P/PET ratio ≥ 1 and total monthly deficit < 150 mm   ...   Isopluvial
+* 1a. P/PET ratio ≥ 1 and total monthly deficit < 150 mm   ...   **Isopluvial**
 * 1b. P/PET ratio < 1 or total monthly deficit ≥ 150 mm
     * 2a. P/PET ratio > 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
-        * 3a. peak AET ≥ 75 mm (monsoonal with rainfall occurring with warm weather)   ...   Pluviothermic
-        * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   Xerothermic
-    * 2b. P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Isoxeric
+        * 3a. peak AET ≥ 75 mm (monsoonal with rainfall occurring with warm weather)   ...   **Pluviothermic**
+        * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   **Xerothermic**
+    * 2b. P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Isoxeric**
+
+![Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
+
+###Moisture Zones
+
+* 1a. P/PET ratio ≥ 2 ... **Perhumid**
+* 1b. P/PET ratio < 2
+    * 2a. P/PET ratio ≥ 1.414 ... **Moist Humid**
+    * 2b. P/PET ratio < 1.414
+        * 3a. P/PET ratio ≥ 1 ... **Dry Humid**
+        * 3b. P/PET ratio < 1
+            * 4a. P/PET ratio ≥ 0.707 ... **Moist Subhumid**
+            * 4b. P/PET ratio < 0.707
+                * 5a. P/PET ratio ≥ 0.5 ... **Dry Subhumid**
+                * 5b. P/PET ratio < 0.5
+                    * 6a. P/PET ratio ≥ 0.25 ... **Semiarid**
+                    * 6b. P/PET ratio < 0.25
+                        * 7a. P/PET ratio ≥ 0.125 ... **Arid**
+                        * 7b. P/PET ratio < 0.125 ... **Perarid**
+
+![Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
 
 ###Temperature Regime
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
-    * 2a. Tw ≥ 18°C
-        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C ... Tropical
-            * Tw ≥ 24°C
-                * Tc ≥ 20°C and Tclx ≥ 5°C ... Hot Mesotropical
-                * Tc < 20°C or Tclx < 5°C ... Hot Cryotropical
-            * Tw < 24°C ... Premontane Tropical
-        * 3b. Tc < 15°C or Tclx < 0°C ... Subtropical
+    * 2a. Tg ≥ 18°C
+        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C ... **Tropical**
+            * Tg ≥ 24°C
+                * Tc ≥ 20°C and Tclx ≥ 5°C ... **Hot Mesotropical**
+                * Tc < 20°C or Tclx < 5°C ... **Hot Cryotropical**
+            * Tg < 24°C ... **Premontane Tropical**
+        * 3b. Tc < 15°C or Tclx < 0°C ... **Subtropical**
             * Tc ≥ 10°C and Tclx ≥ -5°C
-                * Tw ≥ 24°C ... Hot Thermosubtropical
-                * Tw < 24°C ... Warm Thermosubtropical
+                * Tg ≥ 24°C ... **Hot Thermosubtropical**
+                * Tg < 24°C ... **Warm Thermosubtropical**
             * Tc < 10°C or Tclx < -10°C
                 * Tc ≥ 5°C and Tclx ≥ -10°C
-                    * Tw ≥ 24°C ... Hot Mesosubtropical
-                    * Tw < 24°C ... Warm Mesosubtropical
+                    * Tg ≥ 24°C ... **Hot Mesosubtropical**
+                    * Tg < 24°C ... **Warm Mesosubtropical**
                 * Tc < 5°C or Tclx < -10°C
-                    * Tw ≥ 24°C ... Hot Cryosubtropical
-                    * Tw < 24°C ... Warm Cryosubtropical
-    * 2b. Tw < 18°C
-        * 4a. Tw ≥ 6°C ... Oceanic
-            * Tw ≥ 12°C
-                * Tc ≥ 5°C and Tclx ≥ -10°C ... Montane Subtropical
-                * Tc < 5°C or Tclx < -10°C ... Mild Oceanic
-            * Tw < 12°C
-                * Tc ≥ 5°C and Tclx ≥ -5°C ... Subandean
-                * Tc < 5°C or Tclx < -10°C ... Cool Oceanic
-        * 4b. Tw < 6°C ... Andean
+                    * Tg ≥ 24°C ... **Hot Cryosubtropical**
+                    * Tg < 24°C ... **Warm Cryosubtropical**
+    * 2b. Tg < 18°C
+        * 4a. Tg ≥ 6°C ... Oceanic
+            * Tg ≥ 12°C
+                * Tc ≥ 5°C and Tclx ≥ -10°C ... **Montane Subtropical**
+                * Tc < 5°C or Tclx < -10°C ... **Mild Oceanic**
+            * Tg < 12°C
+                * Tc ≥ 5°C and Tclx ≥ -5°C ... **Subandean**
+                * Tc < 5°C or Tclx < -10°C ... **Cool Oceanic**
+        * 4b. Tg < 6°C ... Andean
 * 1b. Tc ≥ 0° C or Tclx < -15°C
-    * 5a. Tw ≥ 12°C ...... Temperate
+    * 5a. Tg ≥ 12°C ...... Temperate
         * Tc ≥ -10°C or Tclx ≥ -25°C
-            * Tw ≥ 18°C
-                * Tc ≥ -5°C or Tclx ≥ -20°C ... Warm Thermotemperate
-                * Tc < -5°C or Tclx < -20°C ... Warm Mesotemperate
-            * Tw < 18°C
-                * Tw ≥ 15°C ... Mild Temperate
-                * Tw < 15°C ... Presubalpine
+            * Tg ≥ 18°C
+                * Tc ≥ -5°C or Tclx ≥ -20°C ... **Warm Thermotemperate**
+                * Tc < -5°C or Tclx < -20°C ... **Warm Mesotemperate**
+            * Tg < 18°C
+                * Tg ≥ 15°C ... **Mild Temperate**
+                * Tg < 15°C ... **Presubalpine**
         * Tc < -10°C or Tclx < -25°C
             * Tc ≥ -25°C or Tclx ≥ -40°C
-                * Tw ≥ 15°C
-                    * Tw ≥ 18°C ... Warm Cryotemperate
-                    * Tw < 18°C ... Mild Cryotemperate
-                * Tw < 15°C ... Hemiboreal
-            * Tc < -10°C or Tclx < -25°C ... Warm Boreal
-      * 5b. Tw < 12°C
-        * 6a. Tw ≥ 6°C ... Boreal
-            * Tc ≥ -10°C and Tclx ≥ -25°C ... Subalpine
-            * Tc < -10°C or Tclx < -25°C ... Cool Boreal
-        * 6b. Tw < 6°C ... Arctic
-            * Tc ≥ -10°C and Tclx ≥ -25°C ... Alpine
-            * Tc < -10°C or Tclx < -25°C ... Arctic
+                * Tg ≥ 15°C
+                    * Tg ≥ 18°C ... **Warm Cryotemperate**
+                    * Tg < 18°C ... **Mild Cryotemperate**
+                * Tg < 15°C ... **Hemiboreal**
+            * Tc < -10°C or Tclx < -25°C ... **Warm Boreal**
+      * 5b. Tg < 12°C
+        * 6a. Tg ≥ 6°C ... Boreal
+            * Tc ≥ -10°C and Tclx ≥ -25°C ... **Subalpine**
+            * Tc < -10°C or Tclx < -25°C ... **Cool Boreal**
+        * 6b. Tg < 6°C ... Arctic
+            * Tc ≥ -10°C and Tclx ≥ -25°C ... **Alpine**
+            * Tc < -10°C or Tclx < -25°C ... **Arctic**
+            
+            
+![Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
 
-###Map Legend
+###Possible Map Legend
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
-    * 2a. Tw ≥ 18°C
-        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... Tropical
+    * 2a. Tg ≥ 18°C
+        * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... **Tropical**
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tg ≥ 24 and Tc ≥ 20° C and Tclx > 5°C  ...   Tropical Isopluvial Humid Lowland
-                * Tg < 24 or Tc < 20° C or Tclx < 5°C  ...   Tropical Isopluvial Humid Premontane
+                * Tg ≥ 24 and Tc ≥ 20° C and Tclx > 5°C  ...   **Tropical Isopluvial Humid Lowland**
+                * Tg < 24 or Tc < 20° C or Tclx < 5°C  ...   **Tropical Isopluvial Humid Premontane**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
-                    * P/PET ratio ≥ 1 ...   Tropical Pluviothermic Humid
-                    * P/PET ratio < 1 ...   Tropical Pluviothermic Subhumid
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Tropical Isoxeric
+                    * P/PET ratio ≥ 1 ...   **Tropical Pluviothermic Humid**
+                    * P/PET ratio < 1 ...   **Tropical Pluviothermic Subhumid**
+                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Tropical Isoxeric**
         * 3b. Tc < 15°C or Tclx < 0°C ... Subtropical
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tc ≥ 5° C and Tclx ≥ -10°C  ...   Eusubtropical Isopluvial Humid
-                * Tc < 5° C or Tclx < -10°C  ...   Cryosubtropical Isopluvial Humid
+                * Tc ≥ 5° C and Tclx ≥ -10°C  ...   **Eusubtropical Isopluvial Humid**
+                * Tc < 5° C or Tclx < -10°C  ...   **Cryosubtropical Isopluvial Humid**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   Subtropical Pluviothermic Humid
-                        * P/PET ratio < 1 ...   Subtropical Pluviothermic Subhumid
+                        * P/PET ratio ≥ 1 ...   **Subtropical Pluviothermic Humid**
+                        * P/PET ratio < 1 ...   **Subtropical Pluviothermic Subhumid**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   Subtropical Xerothermic Humid
-                        * P/PET ratio < 1 ...   Subtropical Xerothermic Subhumid
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Subtropical Isoxeric
-    * 2b. Tw < 18°C
-        * 4a. Tw ≥ 6°C  ...  Oceanic
+                        * P/PET ratio ≥ 1 ...   **Subtropical Xerothermic Humid**
+                        * P/PET ratio < 1 ...   **Subtropical Xerothermic Subhumid**
+                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Subtropical Isoxeric**
+    * 2b. Tg < 18°C
+        * 4a. Tg ≥ 6°C  ...  **Oceanic**
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tw ≥ 12°C  ...   Mild Oceanic Isopluvial Humid
-                * Tw < 12°C  ...   Cool Oceanic Isopluvial Humid
+                * Tg ≥ 12°C  ...   **Mild Oceanic Isopluvial Humid**
+                * Tg < 12°C  ...   **Cool Oceanic Isopluvial Humid**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   Oceanic Pluviothermic Humid
-                        * P/PET ratio < 1 ...   Oceanic Pluviothermic Subhumid
+                        * P/PET ratio ≥ 1 ...   **Oceanic Pluviothermic Humid**
+                        * P/PET ratio < 1 ...   **Oceanic Pluviothermic Subhumid**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   Oceanic Xerothermic Humid
-                        * P/PET ratio < 1 ...   Oceanic Xerothermic Subhumid
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Oceanic Isoxeric
+                        * P/PET ratio ≥ 1 ...   **Oceanic Xerothermic Humid**
+                        * P/PET ratio < 1 ...   **Oceanic Xerothermic Subhumid**
+                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Oceanic Isoxeric**
 
-        * 4b. Tw < 6°C  ...  Andean
-            * P/PET ratio ≥ 1  ...  Andean Humid
-            * P/PET ratio ≥ 1  ...  Andean Subhumid
+        * 4b. Tg < 6°C  ...  **Andean**
+            * P/PET ratio ≥ 1  ...  **Andean Humid**
+            * P/PET ratio ≥ 1  ...  **Andean Subhumid**
 * 1b. Tc ≥ 0° C or Tclx < -15°C
-    * 5a. Tw ≥ 12°C  ...  Temperate
+    * 5a. Tg ≥ 12°C  ...  **Temperate**
         * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-            * Tw ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   Warm Thermotemperate Isopluvial Humid
-            * Tw < 18°C or Tc ≥ -10° C or Tclx > -25°C
-                * Tw ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   Mild Mesotemperate Isopluvial Humid
-                * Tw < 15°C or Tc < -25° C or Tclx < -40°C  ...   Mild Cryotemperate Isopluvial Humid
+            * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **Warm Thermotemperate Isopluvial Humid**
+            * Tg < 18°C or Tc ≥ -10° C or Tclx > -25°C
+                * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **Mild Mesotemperate Isopluvial Humid**
+                * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **Mild Cryotemperate Isopluvial Humid**
         * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
             * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                 * Peak AET ≥ 75 mm.
-                    * P/PET ratio ≥ 1 ...   Temperate Pluviothermic Humid
-                    * P/PET ratio < 1 ...   Temperate Pluviothermic Subhumid
+                    * P/PET ratio ≥ 1 ...   **Temperate Pluviothermic Humid**
+                    * P/PET ratio < 1 ...   **Temperate Pluviothermic Subhumid**
                 * Peak AET < 75 mm.
-                    * P/PET ratio ≥ 1 ...   Temperate Xerothermic Humid
-                    * P/PET ratio < 1 ...   Temperate Xerothermic Subhumid
-            * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   Temperate Isoxeric
+                    * P/PET ratio ≥ 1 ...   **Temperate Xerothermic Humid**
+                    * P/PET ratio < 1 ...   **Temperate Xerothermic Subhumid**
+            * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Temperate Isoxeric**
 
-    * 5b. Tw < 12°C
-        * 6a. Tw ≥ 6°C  ...  Boreal
-            * P/PET ratio ≥ 1  ...  Boreal Humid
-            * P/PET ratio ≥ 1  ...  Boreal Subhumid
-        * 6b. Tw < 6°C  ...  Arctic
-            * P/PET ratio ≥ 1  ...  Arctic Humid
-            * P/PET ratio ≥ 1  ...  Arctic Subhumid
+    * 5b. Tg < 12°C
+        * 6a. Tg ≥ 6°C  ...  **Boreal**
+            * P/PET ratio ≥ 1  ...  **Boreal Humid**
+            * P/PET ratio ≥ 1  ...  **Boreal Subhumid**
+        * 6b. Tg < 6°C  ...  **Arctic**
+            * P/PET ratio ≥ 1  ...  **Arctic Humid**
+            * P/PET ratio ≥ 1  ...  **Arctic Subhumid**
             
-###Moisture Zones
-
-* 1a. P/PET ratio ≥ 2 ... Perhumid
-* 1b. P/PET ratio < 2
-    * 2a. P/PET ratio ≥ 1.414 ... Moist Humid
-    * 2b. P/PET ratio < 1.414
-        * 3a. P/PET ratio ≥ 1 ... Dry Humid
-        * 3b. P/PET ratio < 1
-            * 4a. P/PET ratio ≥ 0.707 ... Moist Subhumid
-            * 4b. P/PET ratio < 0.707
-                * 5a. P/PET ratio ≥ 0.5 ... Dry Subhumid
-                * 5b. P/PET ratio < 0.5
-                    * 6a. P/PET ratio ≥ 0.25 ... Semiarid
-                    * 6b. P/PET ratio < 0.25
-                        * 7a. P/PET ratio ≥ 0.125 ... Arid
-                        * 7b. P/PET ratio < 0.125 ... Perarid
-
 ###Formulae
 Monthly potential evapotranspiration: $$PET = 0.008404 * 216.7*\frac{exp(17.26939*\frac{T}{T+237.3})}{T+273.3}*Ra*dM*(Tmax-Tmin)^{0.5}$$
 
@@ -254,7 +270,7 @@ Other variables
 
 Tc = mean temperature of the coldest month
 
-Tw = mean positive (subzero temperatures counted as zero) temperature of the warmest 6 months
+Tg = mean positive (subzero temperatures counted as zero) temperature of the warmest 6 months
 
 P = precipitation
 
@@ -289,13 +305,13 @@ Rivas-Martínez, S., 2004. Global bioclimatics. Classificación Bioclimática de
 
 Thornthwaite, C.W., 1948. An approach toward a rational classification of climate. Geographical review, 38(1), pp.55-94. 
 
-Alternative PET calculations: 
+####Alternative PET calculations: 
 
 Lu, J., Sun, G., McNulty, S.G. and Amatya, D.M., 2005. A comparison of six potential evapotranspiration methods for regional use in the southeastern United States 1. JAWRA Journal of the American Water Resources Association, 41(3), pp.621-633. 
 
 ####Other publications relating climate to vegetation: 
 
-Faber-Langendoen, D., Keeler-Wolf, T., Meidinger, D., Josse, C., Weakley, A., Tart, D., Navarro, G., Hoagland, B., Ponomarenko, S., Saucier, J.P. and Fults, G., 2012. Classification and description of world formation types. Part II (Description of formation types). Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA. 
+Faber-Langendoen, D., Keeler-Wolf, T., Meidinger, D., Josse, C., Weakley, A., Tart, D., Navarro, G., Hoagland, B., Ponomarenko, S., Saucier, J.P. and Fults, G., 2012. Classification and description of world formation types. Part II (Description of formation types). Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA. See also http://usnvc.org/explore-classification/
 
 Box, E.O., 1996. Plant functional types and climate at the global scale. Journal of Vegetation Science, 7(3), pp.309-320. 
 
@@ -308,3 +324,15 @@ Sakai, A., 1981. Freezing resistance of broad-leaved evergreen trees in the warm
 Schenk, H.J. and Jackson, R.B., 2002. The global biogeography of roots. Ecological monographs, 72(3), pp.311-328. 
 
 Wright, I.J., Dong, N., Maire, V., Prentice, I.C., Westoby, M., Díaz, S., Gallagher, R.V., Jacobs, B.F., Kooyman, R., Law, E.A. and Leishman, M.R., 2017. Global climatic drivers of leaf size. Science, 357(6354), pp.917-921.
+
+####Appendix: Climate Browsers
+The MLRA Climate Browser (https://usda.shinyapps.io/MLRAClimate/) allows a user to compare and contrast the climates of up to two different MLRAs at a time for various climatic parameters. The default monthly temperature and preciptiation graph shows the relationship of preciptation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30 year record (20th and 80th percentiles) among the stations within the MLRA (shows both temporal and geographic variability).
+
+![User interface for the MLRA Climate Browser.](figures/BrowserInterface.png)
+
+![User selection of a geographic subregion such as state, narrows the list of MLRAs and extent of station data being summarized.](figures/BrowserInterface2.png)
+
+![A map shows the extent of the stations used in the climate summary.](figures/Map_98A.png)
+
+The Biome Climate Browser (https://phytoclast.shinyapps.io/BioClimR/) allows a user to explore the climates of differnt World Wildlife Fund ecoregions globally (except Antarctica). Options exist to explore alternative time frames in the past and the future.
+
