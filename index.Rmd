@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-##A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distribution
+##A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distributions
 
 Abstract:
 
@@ -24,7 +24,7 @@ Previous attempts at pinning temperatures of the timberline to the highest month
 
 Vegetation zonation at warmer temperatures should also be expected to follow a growing season optimum according to each species, except where critical thresholds of cold or drought tolerances are exceeded. Examples can be seen where crops and tree genera associated with the temperate zone are found in the premontane and montane zones of tropical mountains where warm seasons are comparable, but winters are very different. The limits to most crops and the boundary between the temperate deciduous and boreal forest zones corresponds roughy to a growing season temperature of 12°C.
 
-![Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
+![Figure 1: Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
 
 **Annual Extreme Low/Coldest Mean Monthly Temperature**
 
@@ -35,20 +35,20 @@ The synthesis of extreme cold and average cold into a single index was made to a
 The cold index used here for a subtropical designation, therefore, pivots around whichever is above the more limiting value relative to 0°C for coldest mean monthly and -15°C annual extreme low temperatures. Tropical climate is defined here to be frost free above the 0°C extreme low temperature threshold and allowing a coldest monthly mean temperature to be as low as 15°C, maintaining the 15-degree differential between the two parameters. The consensus among different systems maintaining subtropical or tropical climates above an 18°C threshold will be expressed by setting it as the lower limit of growing season temperature, below which an oceanic or tropical montane climate will be defined.
 The cold index can be tuned further to subdivide the temperate (continental) climates. While most of the zonation will pivot on limitations to growing season warmth, there are some limits on groups of taxa. The hardiness of boreal species tends to be almost unlimited, whereas most temperate deciduous genera persist only down to -40°C. The diversity of temperate deciduous species drops sharply where annual extreme lows fall below -25°C.
 
-![Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
+![Figure 2: Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
 
 
 **Surplus/Deficit**
 Mesophytic vegetation requires a constant supply of soil moisture, whereas xerophytic vegetation tolerates periods of drought. Mesophytic forests typically occur where mean annual precipitation exceeds potential evapotranspiration ratio (P/PET ratio), meaning that seasonal dry periods are more than compensated for by seasonal surpluses stored as soil moisture to maintain plant growth. Gradations in moisture regime are usually expressed on a log base 2 scale (e.g. Holdridge), from per-humid and per-arid at its wet and dry extremes respectively.
 
 Even in a humid climate, significant seasonal drought occurs where the cumulative loss of moisture evapotranspiration exceeds that of available soil water holding capacity within the rooting zone. A deficit of 150 mm or more is considered significant for most soils and would require adaptations of thickened leaves or deciduousness to protect a plant from drying out. Desert vegetation may occur where precipitation is less than half required to maintain soil moisture, and that significant seasonal surpluses do not support seasonal growth of mesophytic vegetation. Instead, desert vegetation must avail themselves with episodic rainfall that never wets the whole soil profile.
-![Comparision between a humid isopluvial climate (MLRA 98A) and a perhumid xerothermic climate (MLRA 1), showing that significant moisture stress can be more likely in the wetter climate if soil water holding capacity is less than the total moisture deficit.](figures/MoistureDroughtCompare.png)
+![Figure 3: Comparision between a humid isopluvial climate (MLRA 98A) and a perhumid xerothermic climate (MLRA 1), showing that significant moisture stress can be more likely in the wetter climate if soil water holding capacity is less than the total moisture deficit.](figures/MoistureDroughtCompare.png)
 
 **Peak AET** For climates with seasonal variability in moisture, plants must employ a strategy of either tolerance or avoidance to survive the dry season. The timing of the dry season, however is of less importance compared the timing of the wet season. If the wet season coincides with temperatures favoring maximum growth, the strategy is avoidance, allowing annual regrowth of more efficient deciduous organs optimized for higher peak productivity. In contrast, if moisture is only available during periods of lower temperatures, the strategy is tolerance, allowing persistence through long periods of low productivity. In addition, when warm temperatures coincides with precipitation, the frequency of lightning is higher and fire return inverval is shorter, further giving advantage to grassland vegetation over shrubland.
 
 Actual monthly evapotranspiration (AET) is an indicator of how much precipitation of the current month is used in that month.  A minimally tropical month at 15°C would generally result in a PET of at least 75 mm. Therefore, a tropical rainy should have a peak monthly AET of greater than or equal to 75 mm. Plants in seasonally moist climates with peak AET less than 75 mm either lack a warm season, or are moist only during the cool season.
 
-![Comparision between a subtropical prairie climate (MLRA 78A) and a chapparal climate (MLRA 14), showing how peak AET is the key difference.](figures/pAET_Compare.png)
+![Figure 4: Comparision between a subtropical prairie climate (MLRA 78A) and a chapparal climate (MLRA 14), showing how peak AET is the key difference.](figures/pAET_Compare.png)
 
 
 
@@ -57,8 +57,7 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
 
 **A note on PET equations** Potential evapotranspiration is a function of temperature, solar radiation, relative humidity, cloud cover, wind speed, and atmospheric pressure (Lu, McNulty, & Amatya, 2005). The Holdridge method is the simplest method, by simply multiplying annual biotemperature by 58.93, but is never used for serious applications beyond climate classification. The Thornthwaite method was an earlier attempt at estimating PET that used only monthly mean temperature, and used day length as a proxy for solar radiation. Formulas that use daylength for solar radiation that do not account for lower sun angles (e.g. Thornthwaite) may also over estimate PET at high latitudes with 24 hour sunshine. The interpretability monthly values using the Thorntwaite method is also complicated by division by a “heat index” which is based on an annual temperature total, rendering some values in the arctic region to be anomalously high. Priestly-Taylor method is considered among the more accurate (Lu, McNulty, & Amatya, 2005), consisting of elements of each of these factors (Details can be found here: http://www.fao.org/docrep/x0490e/x0490e07.htm#solar%20radiation or http://modeling.bsyse.wsu.edu/CS_Suite/cropsyst/manual/simulation/et/priestly_taylor.htm). Employing all the needed parameters for a global map is impracticable. Hargreaves-Samoni method reduces the number of required parameters by using daily temperature range as a proxy for cloud cover and relative humidity. I followed a hybrid approach using temperature, daily temperature range, and a formula for calculating shortwave solar radiation. I calibrated the formula against values from the Thornthwaite method in the north temperate zone where it is widely employed. This approach falls short of the Thornthwaite method in cool or humid climates and exceeds it in arid regions with a wide daily temperature ranges.
 
-
-
+***
 ##Keys to Climate Classification
 
 ###Macrothermoclimate
@@ -86,7 +85,7 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
         * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   **Xerothermic**
     * 2b. P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Isoxeric**
 
-![Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
+![Figure 5: Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
 
 ###Moisture Zones
 
@@ -105,7 +104,7 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
                         * 7a. P/PET ratio ≥ 0.125 ... **Arid**
                         * 7b. P/PET ratio < 0.125 ... **Perarid**
 
-![Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
+![Figure 6: Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
 
 ###Temperature Regime
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
@@ -160,7 +159,7 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
             * Tc < -10°C or Tclx < -25°C ... **Arctic**
             
             
-![Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
+![Figure 7: Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
 
 ###Possible Map Legend
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
@@ -229,7 +228,8 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
         * 6b. Tg < 6°C  ...  **Arctic**
             * P/PET ratio ≥ 1  ...  **Arctic Humid**
             * P/PET ratio ≥ 1  ...  **Arctic Subhumid**
-            
+
+***          
 ###Formulae
 Monthly potential evapotranspiration: $$PET = 0.008404 * 216.7*\frac{exp(17.26939*\frac{T}{T+237.3})}{T+273.3}*Ra*dM*(Tmax-Tmin)^{0.5}$$
 
@@ -279,7 +279,8 @@ AET = lesser value among monthly P and PET, approximating “actual evapotranspi
 Deficit = .total monthly deficit is calculated by summing for the entire year each monthly amount of PET in excess of P (subtract P from PET if P is less than PET; zero if P ≥ PET).
 
 Surplus = total monthly surplus is calculated by summing for the entire year each monthly amount of P in excess of PET (subtract PET from P if PET is less than P; zero if P <= PET).
- 
+
+***
 ###References
 
 ####Hardiness Zone Map of the World recreated from these sources: 
@@ -325,14 +326,20 @@ Schenk, H.J. and Jackson, R.B., 2002. The global biogeography of roots. Ecologic
 
 Wright, I.J., Dong, N., Maire, V., Prentice, I.C., Westoby, M., Díaz, S., Gallagher, R.V., Jacobs, B.F., Kooyman, R., Law, E.A. and Leishman, M.R., 2017. Global climatic drivers of leaf size. Science, 357(6354), pp.917-921.
 
-####Appendix: Climate Browsers
-The MLRA Climate Browser (https://usda.shinyapps.io/MLRAClimate/) allows a user to compare and contrast the climates of up to two different MLRAs at a time for various climatic parameters. The default monthly temperature and preciptiation graph shows the relationship of preciptation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30 year record (20th and 80th percentiles) among the stations within the MLRA (shows both temporal and geographic variability).
+***
+###Appendix: Climate Browsers
+
+***
+The **MLRA Climate Browser** (https://usda.shinyapps.io/MLRAClimate/) allows a user to compare and contrast the climates of up to two different MLRAs at a time for various climatic parameters. The default monthly temperature and preciptiation graph shows the relationship of preciptation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30 year record (20th and 80th percentiles) among the stations within the MLRA (shows both temporal and geographic variability).
 
 ![User interface for the MLRA Climate Browser.](figures/BrowserInterface.png)
 
 ![User selection of a geographic subregion such as state, narrows the list of MLRAs and extent of station data being summarized.](figures/BrowserInterface2.png)
 
-![A map shows the extent of the stations used in the climate summary.](figures/Map_98A.png)
+![Example maps showing the extent of the stations used in the climate summary for the areas selected.](figures/Map_98A.png)
 
-The Biome Climate Browser (https://phytoclast.shinyapps.io/BioClimR/) allows a user to explore the climates of differnt World Wildlife Fund ecoregions globally (except Antarctica). Options exist to explore alternative time frames in the past and the future.
+***
+The **Biome Climate Browser** (https://phytoclast.shinyapps.io/BioClimR/) allows a user to explore the climates of differnt World Wildlife Fund ecoregions globally (except Antarctica). Options exist to explore alternative time frames in the past and the future.
+
+![User selection of an ecoregion located in Italy showing a similar annual temperature as today, but with a greater seasonal range 6000 years ago.](figures/BrowserInterface3.png)
 
