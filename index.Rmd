@@ -208,10 +208,10 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
 * 1b. Tc ≥ 0° C or Tclx < -15°C
     * 5a. Tg ≥ 12°C  ...  **Temperate**
         * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-            * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **316 Warm Thermotemperate Isopluvial Humid -- Warm Temperate Deciduous Forest**
+            * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **316 Warm Thermo-temperate Isopluvial Humid -- Warm Temperate Deciduous Forest**
             * Tg < 18°C or Tc ≥ -10° C or Tclx > -25°C
-                * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **315 Mild Mesotemperate Isopluvial Humid -- Mild Temperate Deciduous/Mixed Forest**
-                * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **314 Mild Cryotemperate Isopluvial Humid -- Hemiboreal Mixed Forest**
+                * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **315 Mild Meso-temperate Isopluvial Humid -- Mild Temperate Deciduous/Mixed Forest**
+                * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **314 Mild Cryo-temperate Isopluvial Humid -- Hemiboreal Mixed Forest**
         * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
             * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                 * Peak AET ≥ 75 mm.
