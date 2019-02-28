@@ -230,7 +230,7 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
             * P/PET ratio ≥ 1  ...  **112-114 Arctic Humid**
             * P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid**
 
-![Figure 6: Map of general climate of North America, a broad level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190227s.png)
+![Figure 6: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190227s.png)
 
 ***          
 ###Formulae
