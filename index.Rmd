@@ -162,73 +162,75 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
             
 ![Figure 7: Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
 
-###Possible Map Legend
+###General Climate Map Legend
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
     * 2a. Tg ≥ 18°C
         * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... **Tropical**
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tg ≥ 24 and Tc ≥ 20° C and Tclx > 5°C  ...   **Tropical Isopluvial Humid Lowland**
-                * Tg < 24 or Tc < 20° C or Tclx < 5°C  ...   **Tropical Isopluvial Humid Premontane**
+                * Tg ≥ 24 and Tc ≥ 20° C and Tclx > 5°C  ...   **715 Tropical Isopluvial Humid Lowland**
+                * Tg < 24 or Tc < 20° C or Tclx < 5°C  ...   **714 Tropical Isopluvial Humid Premontane**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
-                    * P/PET ratio ≥ 1 ...   **Tropical Pluviothermic Humid**
-                    * P/PET ratio < 1 ...   **Tropical Pluviothermic Subhumid**
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Tropical Isoxeric**
+                    * P/PET ratio ≥ 1 ...   **712-713 Tropical Pluviothermic Humid**
+                    * P/PET ratio < 1 ...   **702-703 Tropical Pluviothermic Subhumid**
+                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **701 Tropical Isoxeric**
         * 3b. Tc < 15°C or Tclx < 0°C ... Subtropical
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tc ≥ 5° C and Tclx ≥ -10°C  ...   **Eusubtropical Isopluvial Humid**
-                * Tc < 5° C or Tclx < -10°C  ...   **Cryosubtropical Isopluvial Humid**
+                * Tc ≥ 5° C and Tclx ≥ -10°C  ...   **615 Eusubtropical Isopluvial Humid**
+                * Tc < 5° C or Tclx < -10°C  ...   **614 Cryosubtropical Isopluvial Humid**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   **Subtropical Pluviothermic Humid**
-                        * P/PET ratio < 1 ...   **Subtropical Pluviothermic Subhumid**
+                        * P/PET ratio ≥ 1 ...   **613 Subtropical Pluviothermic Humid**
+                        * P/PET ratio < 1 ...   **603 Subtropical Pluviothermic Subhumid**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   **Subtropical Xerothermic Humid**
-                        * P/PET ratio < 1 ...   **Subtropical Xerothermic Subhumid**
+                        * P/PET ratio ≥ 1 ...   **612 Subtropical Xerothermic Humid**
+                        * P/PET ratio < 1 ...   **602 Subtropical Xerothermic Subhumid**
                 * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Subtropical Isoxeric**
     * 2b. Tg < 18°C
         * 4a. Tg ≥ 6°C  ...  **Oceanic**
             * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-                * Tg ≥ 12°C  ...   **Mild Oceanic Isopluvial Humid**
-                * Tg < 12°C  ...   **Cool Oceanic Isopluvial Humid**
+                * Tg ≥ 12°C  ...   **515 Mild Oceanic Isopluvial Humid**
+                * Tg < 12°C  ...   **514 Cool Oceanic Isopluvial Humid**
             * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
                 * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   **Oceanic Pluviothermic Humid**
-                        * P/PET ratio < 1 ...   **Oceanic Pluviothermic Subhumid**
+                        * P/PET ratio ≥ 1 ...   **513 Oceanic Pluviothermic Humid**
+                        * P/PET ratio < 1 ...   **503 Oceanic Pluviothermic Subhumid**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   **Oceanic Xerothermic Humid**
-                        * P/PET ratio < 1 ...   **Oceanic Xerothermic Subhumid**
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Oceanic Isoxeric**
+                        * P/PET ratio ≥ 1 ...   **512 Oceanic Xerothermic Humid**
+                        * P/PET ratio < 1 ...   **502 Oceanic Xerothermic Subhumid**
+                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **601 Oceanic Isoxeric**
 
         * 4b. Tg < 6°C  ...  **Andean**
-            * P/PET ratio ≥ 1  ...  **Andean Humid**
-            * P/PET ratio ≥ 1  ...  **Andean Subhumid**
+            * P/PET ratio ≥ 1  ...  **412-415 Andean Humid**
+            * P/PET ratio ≥ 1  ...  **401-402 Andean Subhumid**
 * 1b. Tc ≥ 0° C or Tclx < -15°C
     * 5a. Tg ≥ 12°C  ...  **Temperate**
         * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
-            * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **Warm Thermotemperate Isopluvial Humid**
+            * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **316 Warm Thermotemperate Isopluvial Humid**
             * Tg < 18°C or Tc ≥ -10° C or Tclx > -25°C
-                * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **Mild Mesotemperate Isopluvial Humid**
-                * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **Mild Cryotemperate Isopluvial Humid**
+                * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **315 Mild Mesotemperate Isopluvial Humid**
+                * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **314 Mild Cryotemperate Isopluvial Humid**
         * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
             * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                 * Peak AET ≥ 75 mm.
-                    * P/PET ratio ≥ 1 ...   **Temperate Pluviothermic Humid**
-                    * P/PET ratio < 1 ...   **Temperate Pluviothermic Subhumid**
+                    * P/PET ratio ≥ 1 ...   **313 Temperate Pluviothermic Humid**
+                    * P/PET ratio < 1 ...   **303 Temperate Pluviothermic Subhumid**
                 * Peak AET < 75 mm.
-                    * P/PET ratio ≥ 1 ...   **Temperate Xerothermic Humid**
-                    * P/PET ratio < 1 ...   **Temperate Xerothermic Subhumid**
-            * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Temperate Isoxeric**
+                    * P/PET ratio ≥ 1 ...   **312 Temperate Xerothermic Humid**
+                    * P/PET ratio < 1 ...   **302 Temperate Xerothermic Subhumid**
+            * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **301 Temperate Isoxeric**
 
     * 5b. Tg < 12°C
         * 6a. Tg ≥ 6°C  ...  **Boreal**
-            * P/PET ratio ≥ 1  ...  **Boreal Humid**
-            * P/PET ratio ≥ 1  ...  **Boreal Subhumid**
+            * P/PET ratio ≥ 1  ...  **212-214 Boreal Humid**
+            * P/PET ratio ≥ 1  ...  **201-203 Boreal Subhumid**
         * 6b. Tg < 6°C  ...  **Arctic**
-            * P/PET ratio ≥ 1  ...  **Arctic Humid**
-            * P/PET ratio ≥ 1  ...  **Arctic Subhumid**
+            * P/PET ratio ≥ 1  ...  **112-114 Arctic Humid**
+            * P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid**
+
+![Figure 5: Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190227s.png)
 
 ***          
 ###Formulae
