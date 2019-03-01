@@ -1,5 +1,5 @@
 ---
-title: "Climate Classification"
+title: "The Ecological Relevance of Parameter Choice in Describing Climate"
 author: "Greg J. Schmidt"
 date: "`r Sys.Date()`"
 output: html_document
@@ -8,9 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-##A Climate Classification Outline Using Biologically Meaningful Indices for Modeling Plant Distributions
-
-Abstract:
+*Abstract:*
 
 > Climate is an important factor in determining the broad patterns of species distribution and potential vegetation. But when similar or adjacent sites with similar soils are compared, it is not clear what if any difference in climate is responsible for differences in site potential. Ecological site descriptions commonly feature monthly and annual precipitation and temperature in climate descriptions and graphs. However, there is wide overlap among these parameters even where temperature and moisture are the primary drivers for the differences among vegetation types.
 I propose several different parameters which have a better relationship to vegetation differences. Available moisture can only be determined when the timing of the inputs of precipitation and the outputs of potential evapotranspiration (PET) are considered with respect to growing season. Temperature can be understood both terms of optimal physiological activity, and lethal tissue limitations. The proposed parameters retain a connection to real world measurement units and are not obscure unitless indices derived from complex relationships. A Shiny application was developed to illustrate alternative graphs with which to compare different regions of the country. Maps were produced to illustrate the distribution of suggested classification intervals of the parameters.
@@ -26,7 +24,7 @@ Vegetation zonation at warmer temperatures should also be expected to follow a g
 
 ![Figure 1: Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
 
-**Annual Extreme Low/Coldest Mean Monthly Temperature**
+**Annual Extreme Low & Coldest Mean Monthly Temperature**
 
 Winter for a plant is when temperatures are less than optimal for continued activity or exceeds the limits of cold tolerance for exposed tissues. Coldest mean monthly and annual extreme low temperatures are correlated winter season parameters with contrasting effects on vegetation. Mean temperatures of the coldest month determines the potential for photosynthesis versus the need for dormancy. It can also indicate other effects such as whether soil is likely to be frozen, leaving an evergreen more vulnerable to desiccation. Extreme low temperature is more direct, causing mortality to tissues that are not adapted. Plants in the northern hemisphere are more likely to be limited by extreme temperatures even while mean monthly temperatures might still be suitable for photosynthesis. In setting up a winter hardiness zones, most emphasis is placed on the extremes. But some consideration is needed to put limits on mean monthly temperatures where extreme temperatures do not correspond.
 The synthesis of extreme cold and average cold into a single index was made to accommodate the concept of subtropical as a climate warm enough to maintain year-round photosynthesis, but subject to frost. The modal vegetation difference between temperate (continental) and subtropical and tropical vegetation is the presence of broadleaf evergreen species and palms. According to Prentice et al, (1992) and Box (1996), most frost tolerate broadleaf evergreens are hardy to extreme low temperatures of -15°C. Most tropical species lack any adaptation to cold and can sustain tissue damage at temperatures as high as 5°C, whereas others can withstand lows of -2°C. The Köppen-Geiger system delineates subtropical and oceanic climate zones where mean temperature of the coldest month exceeds 0°C, and a tropical climate zone where temperature exceeds 18°C. The Holdridge system does not address seasonality, but uses annual biotemperature of 18°C and 24°C for subtropical and tropical zones respectively.
@@ -38,8 +36,11 @@ The cold index can be tuned further to subdivide the temperate (continental) cli
 ![Figure 2: Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
 
 
-**Surplus/Deficit**
+**P/PET Ratio**
+
 Mesophytic vegetation requires a constant supply of soil moisture, whereas xerophytic vegetation tolerates periods of drought. Mesophytic forests typically occur where mean annual precipitation exceeds potential evapotranspiration ratio (P/PET ratio), meaning that seasonal dry periods are more than compensated for by seasonal surpluses stored as soil moisture to maintain plant growth. Gradations in moisture regime are usually expressed on a log base 2 scale (e.g. Holdridge), from per-humid and per-arid at its wet and dry extremes respectively.
+
+**Surplus & Deficit**
 
 Even in a humid climate, significant seasonal drought occurs where the cumulative loss of moisture evapotranspiration exceeds that of available soil water holding capacity within the rooting zone. A deficit of 150 mm or more is considered significant for most soils and would require adaptations of thickened leaves or deciduousness to protect a plant from drying out. Desert vegetation may occur where precipitation is less than half required to maintain soil moisture, and that significant seasonal surpluses do not support seasonal growth of mesophytic vegetation. Instead, desert vegetation must avail themselves with episodic rainfall that never wets the whole soil profile.
 
@@ -79,31 +80,31 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
 ###Macrombroclimate
 
 
-* 1a. P/PET ratio ≥ 1 and total monthly deficit < 150 mm   ...   **Isopluvial**
-* 1b. P/PET ratio < 1 or total monthly deficit ≥ 150 mm
-    * 2a. P/PET ratio > 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
+* 1a. Annual P/PET ratio ≥ 1 and total monthly deficit < 150 mm   ...   **Isopluvial**
+* 1b. Annual P/PET ratio < 1 or total monthly deficit ≥ 150 mm
+    * 2a. Annual P/PET ratio > 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
         * 3a. peak AET ≥ 75 mm (monsoonal with rainfall occurring with warm weather)   ...   **Pluviothermic**
         * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   **Xerothermic**
-    * 2b. P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Isoxeric**
+    * 2b. Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Isoxeric**
 
 ![Figure 5: Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
 
 ###Moisture Zones
 
-* 1a. P/PET ratio ≥ 2 ... **Perhumid**
-* 1b. P/PET ratio < 2
-    * 2a. P/PET ratio ≥ 1.414 ... **Moist Humid**
-    * 2b. P/PET ratio < 1.414
-        * 3a. P/PET ratio ≥ 1 ... **Dry Humid**
-        * 3b. P/PET ratio < 1
-            * 4a. P/PET ratio ≥ 0.707 ... **Moist Subhumid**
-            * 4b. P/PET ratio < 0.707
-                * 5a. P/PET ratio ≥ 0.5 ... **Dry Subhumid**
-                * 5b. P/PET ratio < 0.5
-                    * 6a. P/PET ratio ≥ 0.25 ... **Semiarid**
-                    * 6b. P/PET ratio < 0.25
-                        * 7a. P/PET ratio ≥ 0.125 ... **Arid**
-                        * 7b. P/PET ratio < 0.125 ... **Perarid**
+* 1a. Annual P/PET ratio ≥ 2 ... **Perhumid**
+* 1b. Annual P/PET ratio < 2
+    * 2a. Annual P/PET ratio ≥ 1.414 ... **Moist Humid**
+    * 2b. Annual P/PET ratio < 1.414
+        * 3a. Annual P/PET ratio ≥ 1 ... **Dry Humid**
+        * 3b. Annual P/PET ratio < 1
+            * 4a. Annual P/PET ratio ≥ 0.707 ... **Moist Subhumid**
+            * 4b. Annual P/PET ratio < 0.707
+                * 5a. Annual P/PET ratio ≥ 0.5 ... **Dry Subhumid**
+                * 5b. Annual P/PET ratio < 0.5
+                    * 6a. Annual P/PET ratio ≥ 0.25 ... **Semiarid**
+                    * 6b. Annual P/PET ratio < 0.25
+                        * 7a. Annual P/PET ratio ≥ 0.125 ... **Arid**
+                        * 7b. Annual P/PET ratio < 0.125 ... **Perarid**
 
 ![Figure 6: Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
 
@@ -166,122 +167,126 @@ Actual monthly evapotranspiration (AET) is an indicator of how much precipitatio
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
     * 2a. Tg ≥ 18°C
         * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... **Tropical**
-            * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
+            * Annual P/PET ratio ≥ 1 and total monthly deficit < 150 mm
                 * Tg ≥ 24 and Tc ≥ 20° C and Tclx > 5°C  ...   **715 Tropical Isopluvial Humid Lowland -- Tropical Lowland Moist Forest**
                 * Tg < 24 or Tc < 20° C or Tclx < 5°C  ...   **714 Tropical Isopluvial Humid Premontane -- Tropical Premontane Moist Forest**
-            * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
-                * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
-                    * P/PET ratio ≥ 1 ...   **712-713 Tropical Pluviothermic Humid -- Tropical Seasonal/Monsoon Forest**
-                    * P/PET ratio < 1 ...   **702-703 Tropical Pluviothermic Subhumid -- Tropical Dry Forest/Savanna**
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **701 Tropical Isoxeric -- Tropical Desert**
+            * Annual P/PET ratio < 1 or total monthly deficit ≥ 150 mm
+                * Annual P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
+                    * Annual P/PET ratio ≥ 1 ...   **712-713 Tropical Pluviothermic Humid -- Tropical Seasonal/Monsoon Forest**
+                    * Annual P/PET ratio < 1 ...   **702-703 Tropical Pluviothermic Subhumid -- Tropical Dry Forest/Savanna**
+                * Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **701 Tropical Isoxeric -- Tropical Desert**
         * 3b. Tc < 15°C or Tclx < 0°C ... **Subtropical**
-            * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
+            * Annual P/PET ratio ≥ 1 and total monthly deficit < 150 mm
                 * Tc ≥ 5° C and Tclx ≥ -10°C  ...   **615 Eu-Subtropical Isopluvial Humid -- Subtropical Evergreen Forest**
                 * Tc < 5° C or Tclx < -10°C  ...   **614 Cryo-subtropical Isopluvial Humid -- Subtropical Mixed Forest**
-            * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
-                * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
+            * Annual P/PET ratio < 1 or total monthly deficit ≥ 150 mm
+                * Annual P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   **613 Subtropical Pluviothermic Humid -- Subtropical Woodland/Savanna**
-                        * P/PET ratio < 1 ...   **603 Subtropical Pluviothermic Subhumid -- Subtropical Grassland**
+                        * Annual P/PET ratio ≥ 1 ...   **613 Subtropical Pluviothermic Humid -- Subtropical Woodland/Savanna**
+                        * Annual P/PET ratio < 1 ...   **603 Subtropical Pluviothermic Subhumid -- Subtropical Grassland**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   **612 Subtropical Xerothermic Humid -- Subtropical Sclerophyllous Forest**
-                        * P/PET ratio < 1 ...   **602 Subtropical Xerothermic Subhumid -- Subtropical Sclerophyllous Shrubland**
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Subtropical Isoxeric -- Subtropical Desert**
+                        * Annual P/PET ratio ≥ 1 ...   **612 Subtropical Xerothermic Humid -- Subtropical Sclerophyllous Forest**
+                        * Annual P/PET ratio < 1 ...   **602 Subtropical Xerothermic Subhumid -- Subtropical Sclerophyllous Shrubland**
+                * Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Subtropical Isoxeric -- Subtropical Desert**
     * 2b. Tg < 18°C
         * 4a. Tg ≥ 6°C  ...  **Oceanic**
-            * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
+            * Annual P/PET ratio ≥ 1 and total monthly deficit < 150 mm
                 * Tg ≥ 12°C  ...   **515 Mild Oceanic Isopluvial Humid -- Mild Oceanic/Tropical Montane Moist Forest**
                 * Tg < 12°C  ...   **514 Cool Oceanic Isopluvial Humid -- Cool Oceanic/Tropical Subalpine Moist Forest**
-            * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
-                * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
+            * Annual P/PET ratio < 1 or total monthly deficit ≥ 150 mm
+                * Annual P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                     * Peak AET ≥ 75 mm.
-                        * P/PET ratio ≥ 1 ...   **513 Oceanic Pluviothermic Humid -- Subtropical Montane Seasonal Forest**
-                        * P/PET ratio < 1 ...   **503 Oceanic Pluviothermic Subhumid -- Subtropical Montane Seasonal Woodland**
+                        * Annual P/PET ratio ≥ 1 ...   **513 Oceanic Pluviothermic Humid -- Subtropical Montane Seasonal Forest**
+                        * Annual P/PET ratio < 1 ...   **503 Oceanic Pluviothermic Subhumid -- Subtropical Montane Seasonal Woodland**
                     * Peak AET < 75 mm.
-                        * P/PET ratio ≥ 1 ...   **512 Oceanic Xerothermic Humid -- Oceanic Sclerophyllous Forest**
-                        * P/PET ratio < 1 ...   **502 Oceanic Xerothermic Subhumid -- Oceanic Sclerophyllous Shrubland**
-                * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **601 Oceanic Isoxeric -- Oceanic Desert**
+                        * Annual P/PET ratio ≥ 1 ...   **512 Oceanic Xerothermic Humid -- Oceanic Sclerophyllous Forest**
+                        * Annual P/PET ratio < 1 ...   **502 Oceanic Xerothermic Subhumid -- Oceanic Sclerophyllous Shrubland**
+                * Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **601 Oceanic Isoxeric -- Oceanic Desert**
 
         * 4b. Tg < 6°C  ...  **Andean**
-            * P/PET ratio ≥ 1  ...  **412-415 Andean Humid -- Paramos**
-            * P/PET ratio ≥ 1  ...  **401-402 Andean Subhumid -- Puna**
+            * Annual P/PET ratio ≥ 1  ...  **412-415 Andean Humid -- Paramos**
+            * Annual P/PET ratio ≥ 1  ...  **401-402 Andean Subhumid -- Puna**
 * 1b. Tc ≥ 0° C or Tclx < -15°C
     * 5a. Tg ≥ 12°C  ...  **Temperate**
-        * P/PET ratio ≥ 1 and total monthly deficit < 150 mm
+        * Annual P/PET ratio ≥ 1 and total monthly deficit < 150 mm
             * Tg ≥ 18°C and Tc ≥ -10° C and Tclx ≥ -25°C  ...   **316 Warm Thermo-temperate Isopluvial Humid -- Warm Temperate Deciduous Forest**
             * Tg < 18°C or Tc ≥ -10° C or Tclx > -25°C
                 * Tg ≥ 15°C and Tc ≥ -25° C or Tclx > -40°C  ...   **315 Mild Meso-temperate Isopluvial Humid -- Mild Temperate Deciduous/Mixed Forest**
                 * Tg < 15°C or Tc < -25° C or Tclx < -40°C  ...   **314 Mild Cryo-temperate Isopluvial Humid -- Hemiboreal Mixed Forest**
-        * P/PET ratio < 1 or total monthly deficit ≥ 150 mm
-            * P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
+        * Annual P/PET ratio < 1 or total monthly deficit ≥ 150 mm
+            * Annual P/PET ratio ≥ 0.5 or total monthly surplus ≥ 25 mm or peak AET ≥ 75 mm
                 * Peak AET ≥ 75 mm.
-                    * P/PET ratio ≥ 1 ...   **313 Temperate Pluviothermic Humid -- Temperate Woodland/Savanna**
-                    * P/PET ratio < 1 ...   **303 Temperate Pluviothermic Subhumid -- Temperate Grassland**
+                    * Annual P/PET ratio ≥ 1 ...   **313 Temperate Pluviothermic Humid -- Temperate Woodland/Savanna**
+                    * Annual P/PET ratio < 1 ...   **303 Temperate Pluviothermic Subhumid -- Temperate Grassland**
                 * Peak AET < 75 mm.
-                    * P/PET ratio ≥ 1 ...   **312 Temperate Xerothermic Humid -- Temperate Dry Evergreen Forest**
-                    * P/PET ratio < 1 ...   **302 Temperate Xerothermic Subhumid -- Temperate Steppe**
-            * P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **301 Temperate Isoxeric -- Temperate Desert**
+                    * Annual P/PET ratio ≥ 1 ...   **312 Temperate Xerothermic Humid -- Temperate Dry Evergreen Forest**
+                    * Annual P/PET ratio < 1 ...   **302 Temperate Xerothermic Subhumid -- Temperate Steppe**
+            * Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **301 Temperate Isoxeric -- Temperate Desert**
 
     * 5b. Tg < 12°C
         * 6a. Tg ≥ 6°C  ...  **Boreal**
-            * P/PET ratio ≥ 1  ...  **212-214 Boreal Humid -- Boreal Forest**
-            * P/PET ratio ≥ 1  ...  **201-203 Boreal Subhumid -- Cool Shrubland**
+            * Annual P/PET ratio ≥ 1  ...  **212-214 Boreal Humid -- Boreal Forest**
+            * Annual P/PET ratio ≥ 1  ...  **201-203 Boreal Subhumid -- Cool Shrubland**
         * 6b. Tg < 6°C  ...  **Arctic**
-            * P/PET ratio ≥ 1  ...  **112-114 Arctic Humid -- Wet Tundra**
-            * P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid -- Dry Tundra**
+            * Annual P/PET ratio ≥ 1  ...  **112-114 Arctic Humid -- Wet Tundra**
+            * Annual P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid -- Dry Tundra**
 
 ![Figure 6: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190227s.png)
 
 ***          
-###Formulae
-Monthly potential evapotranspiration: $$PET = 0.008404 * 216.7*\frac{exp(17.26939*\frac{T}{T+237.3})}{T+273.3}*Ra*dM*(Tmax-Tmin)^{0.5}$$
+###Variables and formulae as used in the keys above
 
-where
+**Tc** = mean temperature of the coldest month
 
-Declination: $dec = 0.409*sin(2*\pi*Md/365 – 1.39)$
+**Tg** = mean positive (subzero temperatures counted as zero) temperature of the warmest 6 months
 
-Sunset Angle: $hs = acos(-tan(Latitude/360*2*\pi) * tan(declination)) [-1\to 1]$
+**P** = precipitation
 
-Potential Solar Radiation: $Ra = 117.5 * (hs*sin(Latitude/360*2*\pi)*sin(dec) + cos(Latitude/360*2*\pi)*cos(dec)*sin(hs)) /\pi$
+**AET** = lesser value among monthly P and PET, approximating “actual evapotranspiration” without considering affects of soil moisture storage or runoff. **Peak AET** is the month with the highest value of AET.
 
-T = mean monthly temperature
+**Deficit** = total monthly deficit is calculated by summing for the entire year each monthly amount of PET in excess of P (subtract P from PET if P is less than PET; zero if P ≥ PET).
 
-Tmax = mean monthly daily high temperature
+**Surplus** = total monthly surplus is calculated by summing for the entire year each monthly amount of P in excess of PET (subtract PET from P if PET is less than P; zero if P <= PET).
 
-Tmin = mean monthly daily low temperature
+####Monthly potential evapotranspiration:
+$$PET = 0.008404 * 216.7*\frac{exp(17.26939*\frac{T}{T+237.3})}{T+273.3}*Ra*dM*(Tmax-Tmin)^{0.5}$$
 
-Md = mid-month day of year
+*where*
 
-dM = total days in month
+**Declination:** $dec = 0.409*sin(2*\pi*Md/365 – 1.39)$
 
-Simple approximation of monthly PET: $$PET = 5 * BT$$
+**Sunset Angle:** $hs = acos(-tan(Latitude/360*2*\pi) * tan(declination)) [-1\to 1]$
 
-where
+**Potential Solar Radiation:** $Ra = 117.5 * (hs*sin(Latitude/360*2*\pi)*sin(dec) + cos(Latitude/360*2*\pi)*cos(dec)*sin(hs)) /\pi$
 
-BT = positive mean monthly temperature $[0\to\infty]$ (values below zero set to zero) or “biotemperature”.
+**T** = mean monthly temperature
 
-Mean annual extreme low temperature (approximated): $Tclx = -9.921 + 1.248*Tcl + -0.03829*L + 0.000904*A + -0.0000219 * L*A$
+**Tmax** = mean monthly daily high temperature
 
-where
+**Tmin** = mean monthly daily low temperature
 
-Tcl = low temperature of coldest month
+**Md** = mid-month day of year
 
-L = latitude
+**dM** = total days in month
 
-A = altitude above sealevel
-Other variables
+**Simple approximation of monthly PET:** $$PET = 5 * BT$$
 
-Tc = mean temperature of the coldest month
+*where*
 
-Tg = mean positive (subzero temperatures counted as zero) temperature of the warmest 6 months
+**BT** = positive mean monthly temperature $[0\to\infty]$ (values below zero set to zero) or “biotemperature”.
 
-P = precipitation
+####Mean annual extreme low temperature (approximated):
+$Tclx = -9.921 + 1.248*Tcl + -0.03829*L + 0.000904*A + -0.0000219 * L*A$
 
-AET = lesser value among monthly P and PET, approximating “actual evapotranspiration” without considering affects of soil moisture storage or runoff.
+*where*
 
-Deficit = .total monthly deficit is calculated by summing for the entire year each monthly amount of PET in excess of P (subtract P from PET if P is less than PET; zero if P ≥ PET).
+**Tcl** = low temperature of coldest month
 
-Surplus = total monthly surplus is calculated by summing for the entire year each monthly amount of P in excess of PET (subtract PET from P if PET is less than P; zero if P <= PET).
+**L** = latitude
+
+**A** = altitude above sealevel
+
+
 
 ***
 ###References
@@ -315,7 +320,7 @@ Lu, J., Sun, G., McNulty, S.G. and Amatya, D.M., 2005. A comparison of six poten
 
 ####Other publications relating climate to vegetation: 
 
-Faber-Langendoen, D., Keeler-Wolf, T., Meidinger, D., Josse, C., Weakley, A., Tart, D., Navarro, G., Hoagland, B., Ponomarenko, S., Saucier, J.P. and Fults, G., 2012. Classification and description of world formation types. Part II (Description of formation types). Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA. See also http://usnvc.org/explore-classification/
+Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA. http://usnvc.org/explore-classification/
 
 Box, E.O., 1996. Plant functional types and climate at the global scale. Journal of Vegetation Science, 7(3), pp.309-320. 
 
