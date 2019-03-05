@@ -18,11 +18,15 @@ I propose several different parameters which have a better relationship to veget
 
 **Growing Season Temperature** is the positive average temperature of the warmest 6 months (any sub-freezing months are counted as zeros). Körner (1998) demonstrated that the cold limits of forest growth across a wide range of latitudes share a growing season temperature of 6 to 7°C. In contrast, neither growing season length, growing degree days, nor the mean temperatures of a single month or a whole year was found to be a good fit to the timberline distribution. Plant form and function is optimized according to temperatures likely to maximize productivity during the peak months, whereas the conditions during non-optimal months will determine adaptive strategies such as the persistence of leaves or stems.
 
-Previous attempts at pinning timberline to a highest monthly mean temperature of 10°C (e.g. the Köppen-Geiger system, Kottek et al, 2006), and Holdridge’s (1947) mean annual biotemperature of 3°C are most successful if applied only to middle and high latitudes. But in tropical mountains, where the annual range in monthly temperature is small, the highest forests grow where maximum monthly mean temperatures and annual mean temperatures converge toward 6°C. This temperature threshold can be realized at higher latitude timberlines simply by calculating the positive temperature for the warmest six months, instead of for the whole year. Some tropical timberlines be at warmer elevations where no species are adapted to the possibility of frost.
+Previous attempts at pinning timberline to a highest monthly mean temperature of 10°C (e.g. the Köppen-Geiger system, Kottek et al, 2006), and Holdridge’s (1947) mean annual biotemperature of 3°C are most successful if applied only to middle and high latitudes. But in tropical mountains, where the annual range in monthly temperature is small, the highest forests grow where maximum monthly mean temperatures and annual mean temperatures converge toward 6°C. This temperature threshold can be realized at higher latitude timberlines simply by calculating the positive temperature for the warmest six months, instead of for the whole year. Some tropical timberlines occur at warmer elevations (as warm as 12°C in Hawaii) if no species are adapted to the frequent frost.
 
-Vegetation zonation at warmer temperatures should also be expected to follow a growing season optimum according to each species, except where critical thresholds of cold or drought tolerances are exceeded. Examples can be seen where crops and tree genera associated with the temperate zone are found in the premontane and montane zones of tropical mountains where warm seasons are comparable whereas winters are very different. The greater the growing season temperature, the lower the risk in producing larger more efficient leaves. At cooler temperatures, the seasonal advantage of broadleaves is lost relative to advantage of being evergreen, maximizing the available opportunities for photosynthesis. A growing season temperature between 12 and 15°C is the transition zone between the warmer temperate deciduous and the cooler boreal evergreen forest zones, and happens also to be the limit in viability of most crops.
+![Figure 1: Latitudinal trend in warmest monthly temperature and annual biotemperature where warmest 6 month mean positive temperature is held near 6°C](figures/PositiveTemperaturebyLat.png)
 
-![Figure 1: Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
+Vegetation zonation below the timberline should also be expected to reflect the growing season optima of the prevailing species, except where critical thresholds of cold or drought tolerances are exceeded. Examples can be seen where crops and tree genera associated with the temperate zone are found in the premontane and montane zones of tropical mountains where warm seasons are comparable whereas winters are very different. The greater the growing season temperature, the lower the risk in producing larger more efficient leaves. At cooler temperatures, the seasonal advantage of broadleaves is lost relative to advantage of being evergreen, maximizing the available opportunities for photosynthesis. A growing season temperature between 12 and 15°C is the transition zone between the warmer temperate deciduous and the cooler boreal evergreen forest zones, and happens also to be the limit in viability of most crops.
+
+
+
+![Figure 2: Relationship of temperature with elevation showing the potential elevation of the timberline 6°C in the southern Appalachian would be almost 1000m above the highest peaks, and therefore unrelated to the the presence of balds on some peaks. Also shows that winter cold never reaches the winter cold limitation of any tree species before it runs out of summer warmth](figures/TemperatureElevation.png)
 
 **Annual Extreme Low & Coldest Mean Monthly Temperature**
 
@@ -40,7 +44,7 @@ The modal vegetation difference between temperate (continental) and subtropical 
 
 The cold index can be tuned further to subdivide the temperate (continental) climates. While most of the zonation will pivot on limitations to growing season warmth, there are some cold season limits on groups of taxa. The hardiness of boreal species tends to be almost unlimited, whereas most temperate deciduous genera persist only down to -40°C (Prentice et al, 1992; Box 1996; Sakai & Weiser, 1973). The diversity of temperate deciduous species drops sharply where annual extreme lows fall below -25°C (Sakai & Weiser, 1973).
 
-![Figure 2: Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
+![Figure 3: Comparision between a ajacent temperate zone climates (MLRA 98A and MLRA 94A) that support different zonal vegetation based on temperature differences.](figures/TemperatureCompare.png)
 
 
 **P/PET Ratio**
@@ -51,13 +55,13 @@ Mesophytic vegetation requires a constant supply of soil moisture, whereas xerop
 
 Even in a humid climate, significant seasonal drought occurs where the cumulative loss of moisture evapotranspiration exceeds that of available soil water holding capacity within the rooting zone. A deficit of 150 mm or more is considered significant for most soils and would require adaptations of thickened leaves or deciduousness to protect a plant from drying out. Desert vegetation may occur where precipitation is less than half required to maintain soil moisture, and that significant seasonal surpluses do not support seasonal growth of mesophytic vegetation. Instead, desert vegetation must avail themselves with episodic rainfall that never wets the whole soil profile.
 
-![Figure 3: Comparision between a humid isopluvial climate (MLRA 98A) and a perhumid xerothermic climate (MLRA 1), showing that significant moisture stress can be more likely in the wetter climate if soil water holding capacity is less than the total moisture deficit.](figures/MoistureDroughtCompare.png)
+![Figure 4: Comparision between a humid isopluvial climate (MLRA 98A) and a perhumid xerothermic climate (MLRA 1), showing that significant moisture stress can be more likely in the wetter climate if soil water holding capacity is less than the total moisture deficit.](figures/MoistureDroughtCompare.png)
 
 **Peak AET** For climates with seasonal variability in moisture, plants must employ a strategy of either tolerance or avoidance to survive the dry season. The timing of the dry season, however is of less importance compared the timing of the wet season. If the wet season coincides with temperatures favoring maximum growth, the strategy is avoidance, allowing annual regrowth of more efficient deciduous organs optimized for higher peak productivity. In contrast, if moisture is only available during periods of lower temperatures, the strategy is tolerance, allowing persistence through long periods of low productivity. In addition, when warm temperatures coincides with precipitation, the frequency of lightning is higher and fire return inverval is shorter, further giving advantage to grassland vegetation over shrubland.
 
 Actual monthly evapotranspiration (AET) is an indicator of how much precipitation of the current month is used in that month.  A minimally tropical month at 15°C would generally result in a PET of at least 75 mm. Therefore, a tropical rainy should have a peak monthly AET of greater than or equal to 75 mm. Plants in seasonally moist climates with peak AET less than 75 mm either lack a warm season, or are moist only during the cool season.
 
-![Figure 4: Comparision between a subtropical prairie climate (MLRA 78A) and a chapparal climate (MLRA 14), showing how peak AET is the key difference.](figures/pAET_Compare.png)
+![Figure 5: Comparision between a subtropical prairie climate (MLRA 78A) and a chapparal climate (MLRA 14), showing how peak AET is the key difference.](figures/pAET_Compare.png)
 
 This climate classification offers key improvements over previous global climate classifications. It is a comprehensive climate classification that addresses both temperature and moisture, seasonal variability, and is global in coverage. It considers modal vegetation in determining appropriate break points but avoids overfitting by using regular intervals of the index units. It is based on scalable indices that can be aggregated or subdivided according to application needs. The indices are contiguous across different classes of climate and independent of each other such that climatic trends can be observed quantitatively one element at a time.
 
@@ -101,7 +105,7 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
         * 3b. peak AET < 75 mm (Mediterranean with drought occurring with warm weather and precipitation occurring with cool weather)   ...   **Xerothermic**
     * 2b. Annual P/PET ratio < 0.5 and total monthly surplus < 25 mm and peak AET < 75 mm   ...   **Isoxeric**
 
-![Figure 5: Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
+![Figure 6: Map of climatic domains of North America, a broad level synthesis of moisture and temperature regimes.](figures/northamericaclimate_domain20190123s.png)
 
 ###Moisture Zones
 
@@ -120,7 +124,7 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
                         * 7a. Annual P/PET ratio ≥ 0.125 ... **Arid**
                         * 7b. Annual P/PET ratio < 0.125 ... **Perarid**
 
-![Figure 6: Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
+![Figure 7: Map of detailed moisture zonation of North America.](figures/NorthAmerica_MoistureRegime-20190123s.png)
 
 ###Temperature Regime
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
@@ -175,7 +179,7 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
             * Tc < -10°C or Tclx < -25°C ... **Arctic**
             
             
-![Figure 7: Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
+![Figure 8: Map of detailed temperature zonation of North America.](figures/northamericaclimate_biotemperature20181002s.png)
 
 ###General Climate Map Legend
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
@@ -245,9 +249,9 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
             * Annual P/PET ratio ≥ 1  ...  **112-114 Arctic Humid -- Wet Tundra**
             * Annual P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid -- Dry Tundra**
 
-![Figure 6: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190304s.png)
+![Figure 9: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190304s.png)
 
-![Figure 7: Map of general climate of CONUS, an intermediate level synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190304s.png)
+![Figure 10: Map of general climate of CONUS, an intermediate level synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190304s.png)
 
 ***          
 ###Variables and formulae as used in the keys above
