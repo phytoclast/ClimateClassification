@@ -249,9 +249,9 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
             * Annual P/PET ratio ≥ 1  ...  **112-114 Arctic Humid -- Wet Tundra**
             * Annual P/PET ratio ≥ 1  ...  **101-103 Arctic Subhumid -- Dry Tundra**
 
-![Figure 9: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190304s.png)
+![Figure 9: Map of general climate of North America, an intermediate level synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190305s.png)
 
-![Figure 10: Map of general climate of CONUS, an intermediate level synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190304s.png)
+![Figure 10: Map of general climate of CONUS, an intermediate level synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190305s.png)
 
 ***          
 ###Variables and formulae as used in the keys above
