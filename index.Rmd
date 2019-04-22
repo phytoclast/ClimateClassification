@@ -322,6 +322,27 @@ $Tclx = -9.921 + 1.248*Tcl + -0.03829*L + 0.000904*A + -0.0000219 * L*A$
 **A** = altitude above sea-level
 
 
+![Figure 12: Example of of vegetation model using climate and soil indices.](figures/kuchlerveg20180422.png)
+
+![Figure 13: Relative importance of climate and soil variable in a RandomForest vegetation model.](figures/randomforestveg.png)
+
+Variables in Figure 13:
+Tgs = growing season temperature;
+Tc = coldest monthly temperature;
+Tclx = extreme annual low temperature;
+pAET = peak monthly evapotranspiration;
+M = precipitation/potential evapotranspration ratio;
+SoilpH = soil pH;
+Surpus = cumulative annual precipitation surplus above monthly need;
+Deficit = cumulative annual precipitation deficit above monthly need;
+slope = mean slope;
+hyrdic = percent wetland soils;
+sand = percent sand;
+sealevel = combined index of elevation and proximity to the coast for coastal vegetation;
+salids = percent saline desert soils; 
+Tw = warmest monthly temperature;
+Tw = warmest monthly high temperature;
+bedrock = percent of soils with bedrock within 2 m.
 
 ***
 ###References
