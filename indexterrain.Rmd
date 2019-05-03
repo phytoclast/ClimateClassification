@@ -1,0 +1,38 @@
+---
+title: "To Measure a Mountain"
+author: "Greg J. Schmidt"
+date: "`r Sys.Date()`"
+output: html_document
+---
+<html><head><style>li {list-style-type: none;}</style></head></html>
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Growing up in the relative flattness of Michigan, a trip to the western Upper Peninsula's Porcupine Mountains was considered my first visualization of Mountains. Yet these hills, while bigger than those of my hometown still seemed a bit short. Photographs of the Appalachian Mountains seemed to me more impressive, while those of the Rockies were at times difficult to relate to. It was the size of the trees of forested peaks that provided a relative scale. Some landscapes in Northern Michigan seemed to provide long vistas, yet didn't photograph well. The total relief in some areas work reasonabley impressive compared to neighboring states, but vertical climbs took place in such long distances it was difficult to see the hills as one got closer. Obviously, elevation above sealevel was a non-starter, since a high plain would look like nothing relative to a low hill.
+
+It thus occured to me that in order to measure a mountain, I needed to consider horizontal distance between a base and a summit. At that age, I collected topographic maps, and the idea of a GIS was not yet in my consciousness. The larger a hill, the greater the distance from the summit could be considered. A fixed horizonal distance just wouldn't do, slope had to be considered. Rolling plains might be just as "big" as a large hill, yet not at all noticable in a landscape photo. A large mountain would be truncated and equated to a smaller mountain if one stopped measuring at a fixed distance. Another method called "prominence" was also not adequate, as it doesn't consider distance or slope at all. Other methods exclude plains by simply considering slope as an additional requirement, but still leave large mountain relief under-measured. 
+
+I considered one particular peak that rose 1000 ft (300 m) above lake superior within a distance of 1 mile (1.6 km), and asked myself, how far inland must a peak get from the the lake to still use it as a baseline. I drew a profile and arbitrarily decided that I wouldn't go any more than double that distance for the same height difference. Thus was born the 10% slope rule: a mountain's tallness is measured from the summit to the lowest elevation within a slope of 10% or more. [I also got distracted by the question of how to measure a  waterfall (or a cliff), and decided that it had to fall at least as far as it flowed on the map or a 100% slope rule.] Essentially, this is a cone radiating from the mountain top, but it could also be from the mountain shoulder if the peak is broad and flat.
+
+One early goal was to find out how each US state ranked in terms of mountain tallness. It was not a simple task to search over topographic maps and measure two variables by hand. Measurement strategy was usually to look at the highest peaks first, but there are some peaks of similar heights adjacent to lower elevations. There are also multiple directions one could measure from a peak. In other cases, it is a canyon rim that has to be measured along a conituum. I compiled a list of tall sites by the mid 1990s, prior to GIS.
+
+Creating a map with modern GIS wasn't a simple tax either. The technique settled upon was to assess the focal maximums and minimums for a series of increments of distances. For this task, a 250 m resolution grid was utilized for the Lower 48 United States. A finer 30 m grid was assessed for local areas of interest in lower Michigan, New England, and east Tennessee. When neccissary due to memory limitation for the larger radii, the grid was resampled to a coarser resolution after a prelimindary shorter radius maximum and minimum focal analysis. The smallest radius was the limited by the grid resolution, so relief less than 25 m may represent slopes less than 10%, or may be underestimated due to hill being smaller than the grid size.
+
+![Figure 1: Relative relief at a fixed 10% slope](terrain/reliefnational.png)
+
+
+![Figure 2: Relative relief at a fixed 10% slope](terrain/Region12West_LocalRelief-cty.png)
+
+![Figure 3: Relative relief of Lower Michigan at a fixed 10% slope](terrain/Region12East_LocalRelief-cty.png)
+
+![Figure 4: Relative relief of New England at a fixed 10% slope](terrain/Region06East_LocalRelief-cty.png)
+
+![Figure 5: Relative relief of Washington at a fixed 10% slope](terrain/Washington_LocalRelief-cty.png)
+
+![Figure 6: Relative relief at a fixed 10% slope](terrain/SCal_LocalRelief-cty.png)
+
+![Figure 6: Relative relief of Colorado at a fixed 10% slope](terrain/Col_LocalRelief-cty.png)
+
+![Figure 7: Relative relief of Montana at a fixed 10% slope](terrain/Montana_LocalRelief-cty.png)
+
+
