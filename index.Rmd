@@ -349,8 +349,13 @@ Tw = warmest monthly temperature;
 Tw = warmest monthly high temperature;
 bedrock = percent of soils with bedrock within 2 m.
 
+Vegetation was classified based on GIS data associated with World Wildlife Fund ecoregions (Olsen et al, 2001) and Kuchler potential natural vegetation (Kuchler, 1964). Some biomes were subdivided by overlaying a map by Brown et al (1995) to show thornscrub as separate from warm deserts and tropical dry forests. Portions of "tropical moist forest" mapped as "semi-evergreen forest" by Brown et al (1995) were reclassified as "tropical dry forest", and were indeed in a subhumid climate zone. Over all this resulted in a shift in the areas mapped tropical dry forest from dry to moist. Chaparral vegetation was recognized beyond California. Only areas of tropical coniferous forest that occurred in lowlands were put in a group call tropical pine forest. Areas of Mexico pine-oak woodlands, Texas oak woodlands, and California oak woodlands were grouped as "warm xeric woodlands". The highest elevations in Mexico were recognized by Brown et al (1995) as an extension "montane conifer forest" and are here considered "temperate coniferous forest"" by their presence of fir. Some subdivision of desert vegetation based on grass cover was considered, but not undertaken. Semi-desert grasslands were maintained in "warm desert". Shrub-steppe was maintained as part of "cool desert". Pinyon-juniper woodlands were treated as "cool xeric woodlands".
+
 ***
 ###Alternative General Climate Map Legend
+
+The pAET threshold for cold winter climates was reduced to 50 mm to accommodate the steppe vegetation in the high plains of North America, below the 75 mm threshold. Below 50 mm, the vegetation has more shrubs. The deficit threshold was increased to 300 mm to because tropical forests maintain evergreen status well past the 150 mm threshold. The vegetation becomes more seasonal (deciduous, semi-deciduous, or semi-evergreen) when deficits are above 300 mm or when the P/PET ratio falls below 1, which means that soil is unable to store enough moisture even for deep rooted species.
+
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
     * 2a. Tg ≥ 18°C
         * 3a. Tc ≥ 15°C and Tclx ≥ 0°C  ... **Tropical**
@@ -426,11 +431,11 @@ bedrock = percent of soils with bedrock within 2 m.
             * Annual P/PET ratio ≥ 1  ...  **120-130 Arctic Humid -- Wet Tundra**
             * Annual P/PET ratio < 1  ...  **100-112 Arctic Subhumid -- Dry Tundra**
 
-![Figure 14: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better.](figures/NorthAmerica_GeneralClimate-20190522.png)
+![Figure 14: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better. -- this map still needs to be tweaked to make 621 purple for xerothermic instead of brown for pluviothermic.](figures/NorthAmerica_GeneralClimate-20190522.png)
 
 ###References
 
-####Climate maps derived from these raster GIS data sources: 
+####Climate maps are derived from these raster GIS data sources: 
 
 Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K., Taylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive mapping of temperature and precipitation across the conterminous United States. International Journal of Climatology, 28: 2031-2064. (http://prism.oregonstate.edu/normals/) 
 
@@ -457,7 +462,7 @@ Thornthwaite, C.W., 1948. An approach toward a rational classification of climat
 
 Lu, J., Sun, G., McNulty, S.G. and Amatya, D.M., 2005. A comparison of six potential evapotranspiration methods for regional use in the southeastern United States 1. JAWRA Journal of the American Water Resources Association, 41(3), pp.621-633. 
 
-####Other publications relating climate to vegetation: 
+####Publications related to vegetation: 
 
 Bailey, R.G., 1998. Ecoregions of North America (No. 1548). US Department of Agriculture, Forest Service. 
 
@@ -465,9 +470,13 @@ Box, E.O., 1996. Plant functional types and climate at the global scale. Journal
 
 Box, E.O., 2015. Quantitative delimitation of warm-temperate deciduous forest areas. In: E.O. Box and K. Fujiwara (Eds), Warm-Temperate Deciduous Forests around the Northern Hemisphere (pp. 277-284). Springer.
 
+Brown, D.E., Reichenbacher, F. and Franson, S.E., 1995. A classification system and map of the biotic communities of North America. Biodiversity and management of the Madrean archipelago: The sky islands of southwestern United States and northwestern Mexico.
+
 Faber-Langendoen, D.; Keeler-Wolf, T.; Meidinger, D.; Josse, C.; Weakley, A.; Tart, D.; Navarro, G.; Hoagland, B.; Ponomarenko, S.; Saucier, JP; Fults, G.; Helmer, E. 2012. Classification and description of world formation types. Part II (Description of formation types). Hierarchy Revisions Working Group, Federal Geographic Data Committee, FGDC Secretariat, US Geological Survey and NatureServe, Reston, VA and Arlington, VA. http://usnvc.org/explore-classification/
 
 Körner, C., 1998. A re-assessment of high elevation treeline positions and their explanation. Oecologia, 115(4), pp.445-459.
+
+Kuchler, A.W. 1964. Potential Natural Vegetation of the Conterminous United States. American Geographical Society, Special Publication No. 36
 
 Thompson, R.S., Anderson, K.H., Pelltier, R.T., Strickland, L.E., Shafer, S.L., Bartlein, P.J. and McFadden, A.K., 2015. Atlas of relations between climatic parameters and distributions of important trees and shrubs in North America: Revisions for all taxa from the United States and Canada and new taxa from the western United States. US Department of the Interior, US Geological Survey. https://pubs.usgs.gov/pp/p1650-g/
 
