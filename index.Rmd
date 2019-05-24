@@ -431,7 +431,7 @@ The pAET threshold for cold winter climates was reduced to 50 mm to accommodate 
             * Annual P/PET ratio ≥ 1  ...  **120-130 Arctic Humid -- Wet Tundra**
             * Annual P/PET ratio < 1  ...  **100-112 Arctic Subhumid -- Dry Tundra**
 
-![Figure 14: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better. -- this map still needs to be tweaked to make 621 purple for xerothermic instead of brown for pluviothermic.](figures/NorthAmerica_GeneralClimate-20190522.png)
+![Figure 14: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better.](figures/NorthAmerica_GeneralClimate-20190522.png)
 
 ###References
 
