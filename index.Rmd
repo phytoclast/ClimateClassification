@@ -354,7 +354,7 @@ Vegetation was classified based on GIS data associated with World Wildlife Fund 
 ***
 ###Alternative General Climate Map Legend
 
-The pAET threshold for cold winter climates was reduced to 50 mm to accommodate the steppe vegetation in the high plains of North America, below the 75 mm threshold. Below 50 mm, the vegetation has more shrubs. The deficit threshold was increased to 300 mm to because tropical forests maintain evergreen status well past the 150 mm threshold. The vegetation becomes more seasonal (deciduous, semi-deciduous, or semi-evergreen) when deficits are above 300 mm or when the P/PET ratio falls below 1, which means that soil is unable to store enough moisture even for deep rooted species.
+The pAET threshold for cold winter climates was reduced to 50 mm to accommodate the steppe vegetation in the high plains of North America, below the 75 mm threshold. Below 50 mm, the vegetation has more shrubs. The deficit threshold was increased to 300 mm because tropical forests maintain evergreen status well past the 150 mm threshold. The vegetation becomes more seasonal (deciduous, semi-deciduous, or semi-evergreen) when deficits are above 300 mm or when the P/PET ratio falls below 1, which means that soil is unable to store enough moisture even for deep rooted species.
 
 * 1a. Tc ≥ 0°C and Tclx ≥ -15°C
     * 2a. Tg ≥ 18°C
