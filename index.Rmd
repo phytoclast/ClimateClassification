@@ -271,7 +271,9 @@ Prentice et al (1992) is one of the few other comprehensive classifications whic
 
 ![Figure 10: Map of general climate of North America, a synthesis of moisture and temperature regimes.](figures/NorthAmerica_GeneralClimate-20190430.png)
 
-![Figure 11: Map of general climate of CONUS, a synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190430.png)
+![Figure 12: Map of general climate of CONUS, a synthesis of moisture and temperature regimes.](figures/CONUS_GeneralClimate-20190430.png)
+
+![Figure 13: Map of general climate of the world, a synthesis of moisture and temperature regimes.](figures/GLOBAL_GeneralClimate-20190605.png)
 
 ***          
 ###Variables and formulae as used in the keys above
@@ -327,7 +329,7 @@ $Tclx = -9.921 + 1.248*Tcl + -0.03829*L + 0.000904*A + -0.0000219 * L*A$
 **A** = altitude above sea-level
 
 
-![Figure 12: Example of of vegetation model using climate and soil indices.](figures/NorthAmerica_Vegetation-20190601.png)
+![Figure 13: Example of of vegetation model using climate and soil indices.](figures/NorthAmerica_Vegetation-20190601.png)
 
 ![Figure 13: Relative importance of climate and soil variable in a RandomForest vegetation model.](figures/rf_support_clay.png)
 
@@ -432,7 +434,7 @@ The pAET threshold for cold winter climates was reduced to 50 mm to accommodate 
             * Annual P/PET ratio ≥ 1  ...  **120-130 Arctic Humid -- Wet Tundra**
             * Annual P/PET ratio < 1  ...  **100-112 Arctic Subhumid -- Dry Tundra**
 
-![Figure 14: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better in North America.](figures/NorthAmerica_GeneralClimate-20190522.png)
+![Figure 15: Alternative map of general climate of North America, a synthesis of moisture and temperature regime which follows vegetation a little better in North America.](figures/NorthAmerica_GeneralClimate-20190522.png)
 
 ###References
 
