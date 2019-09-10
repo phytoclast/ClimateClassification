@@ -423,7 +423,9 @@ Wright, I.J., Dong, N., Maire, V., Prentice, I.C., Westoby, M., Díaz, S., Galla
 ###Appendix: Climate Browsers
 
 ***
-The **MLRA Climate Browser** (https://usda.shinyapps.io/MLRAClimate/) allows a user to compare climates of up to two different MLRAs at a time for various climatic parameters. The default monthly temperature and precipitation graph shows the relationship of precipitation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30-year record (20th and 80th percentiles) among the stations within the MLRA (shows both temporal and geographic variability).
+The **MLRA Climate Browser** (https://usda.shinyapps.io/MLRAClimate/) allows a user to compare climates of up to two different MLRAs at a time for various climatic parameters. The default monthly temperature and precipitation graph shows the relationship of precipitation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30-year record (20th and 80th percentiles) among the stations within the MLRA (shows both temporal and geographic variability). Other graphs show individual station means for each parameter.
+
+The **Station Climate Browser** (https://usda.shinyapps.io/StationClimR/) allows a user to compare climates of up to two different United States climate stations at a time for various climatic parameters. The default monthly temperature and precipitation graph shows the relationship of precipitation with potential evapotranspiration. Both precipitation and temperature include error bars indicating the lowest and highest 6 out of 30-year record (20th and 80th percentiles) within a single station. Other graphs show individual record year for each parameter.
 
 ![User interface for the MLRA Climate Browser.](figures/BrowserInterface.png)
 
