@@ -419,6 +419,10 @@ Schenk, H.J. and Jackson, R.B., 2002. The global biogeography of roots. Ecologic
 
 Wright, I.J., Dong, N., Maire, V., Prentice, I.C., Westoby, M., Díaz, S., Gallagher, R.V., Jacobs, B.F., Kooyman, R., Law, E.A. and Leishman, M.R., 2017. Global climatic drivers of leaf size. Science, 357(6354), pp.917-921.
 
+####Relationship of NPP to AET: 
+
+Ito, A. and Inatomi, M., 2012. Water-use efficiency of the terrestrial biosphere: a model analysis focusing on interactions between the global carbon and water cycles. Journal of Hydrometeorology, 13(2), pp.681-694.
+
 ***
 ###Appendix: Climate Browsers
 
