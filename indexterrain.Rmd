@@ -1,7 +1,7 @@
 ---
 title: "To Measure a Mountain"
 author: "Greg J. Schmidt"
-date: "`r Sys.Date()`"
+date: "2019-05-03"
 output: html_document
 ---
 <html><head><style>li {list-style-type: none;}</style></head></html>
@@ -15,7 +15,7 @@ In order to measure a mountain, I needed to consider horizontal distance between
 
 I considered one particular peak that rose 1000 ft (300 m) above lake superior within a distance of 1 mile (1.6 km), and asked myself, how far inland must a peak get from the lake to still use the lake as the baseline. I drew a profile and arbitrarily decided that I wouldn't go any more than double that distance for the same height difference. Thus was born the 10% slope rule: a mountain's tallness is measured from the summit to the lowest elevation within a slope of 10% or more. [I also got distracted by the question of how to measure a waterfall (or a cliff), and decided that it had to fall at least as far as it flowed on the map or a 100% slope rule.] Essentially, this is a cone radiating from the mountain top, but it could also be from the mountain shoulder if the peak is broad and flat.
 
-In my high school years of the lake 1980s, I collected topographic maps; and the idea of a GIS was not yet in my consciousness. The larger a hill, the greater the distance from the summit could be considered. One early goal was to find out how each US state ranked in terms of mountain tallness. It was not a simple task to search over topographic maps and measure two variables by hand. Measurement strategy was usually to look at the highest peaks first, but there are some peaks of similar heights adjacent to lower elevations. There are also multiple directions one could measure from a peak. In other cases, it is a canyon rim that has to be measured along a continuum. I compiled a list of tall sites by the mid 1990s with additional access to maps in libraries and early versions of Delorme map software, prior to my introduction to GIS.
+In my high school years of the late 1980s, I collected topographic maps; and the idea of a GIS was not yet in my consciousness. The larger a hill, the greater the distance from the summit could be considered. One early goal was to find out how each US state ranked in terms of mountain tallness. It was not a simple task to search over topographic maps and measure two variables by hand. Measurement strategy was usually to look at the highest peaks first, but there are some peaks of similar heights adjacent to lower elevations. There are also multiple directions one could measure from a peak. In other cases, it is a canyon rim that has to be measured along a continuum. I compiled a list of tall sites by the mid 1990s with additional access to maps in libraries and early versions of Delorme map software, prior to my introduction to GIS.
 
 ```{r, echo=FALSE, warning=FALSE}
 library(knitr)
